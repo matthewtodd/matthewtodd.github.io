@@ -16,10 +16,10 @@ An object that provides access to the concatenation of all the files given as co
 
 So, here we go:
 
-<pre>
+{% highlight bash %}
 ruby -rcsv -e 'CSV::Reader.parse(ARGF) { |row| puts row[4] }' *.csv
   | sort | uniq > final.csv
-</pre>
+{% endhighlight %}
 
 In English, that's "loading the <code>csv</code> library, parse the given files (<code>*.csv</code>), printing only column 4 of each <code>row</code>. Sort the results, removing duplicates, and save as <code>final.csv</code>."
 

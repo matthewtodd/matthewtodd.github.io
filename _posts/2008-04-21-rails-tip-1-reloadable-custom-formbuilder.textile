@@ -16,11 +16,13 @@ Though "proper," this approach requires restarting the server to see changes in 
 
 You can avoid restarting the server by doing this instead:
 
-<pre class="textmate-source twilight"><code><span class="meta meta_class meta_class_ruby"><span class="keyword keyword_control keyword_control_class keyword_control_class_ruby">class</span> <span class="entity entity_name entity_name_type entity_name_type_class entity_name_type_class_ruby">ActionView::Base</span></span>
-  <span class="meta meta_function meta_function_method meta_function_method_without-arguments meta_function_method_without-arguments_ruby"><span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">self.default_form_builder</span></span>
-    <span class="variable variable_other variable_other_constant variable_other_constant_ruby">LabellingFormBuilder</span>
-  <span class="keyword keyword_control keyword_control_ruby">end</span>
-<span class="keyword keyword_control keyword_control_ruby">end</span></span></code></pre>
+{% highlight ruby %}
+class ActionView::Base
+  def self.default_form_builder
+    LabellingFormBuilder
+  end
+end
+{% endhighlight %}
 
 It's a subtle difference, but it provides a nice window into understanding the <code>Dependencies</code> mechanism:
 

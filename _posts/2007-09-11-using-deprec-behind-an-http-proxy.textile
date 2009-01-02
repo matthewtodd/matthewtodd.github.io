@@ -14,15 +14,15 @@ Here's what I did:
 
 Create <code>~/.ssh/environment</code> on the server, <code>chmod 600</code>, with the line
 
-<pre><code>
+{% highlight bash %}
 HTTP_PROXY=http://proxy:8080
-</code></pre>
+{% endhighlight %}
 
 And in <code>/etc/ssh/sshd_config</code>, set
 
-<pre><code>
+{% highlight apache %}
 PermitUserEnvironment yes
-</code></pre>
+{% endhighlight %}
 
 This'll take care of <code>apt-get</code> and <code>gem</code>'s proxy needs, but then you'll still need to:
 
@@ -30,9 +30,9 @@ This'll take care of <code>apt-get</code> and <code>gem</code>'s proxy needs, bu
 
 Modify <code>/etc/wgetrc</code> so that it contains
 
-<pre><code>
+{% highlight ini %}
 http_proxy = http://proxy:8080
-</code></pre>
+{% endhighlight %}
 
 <h3>Done!</h3>
 

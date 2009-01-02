@@ -12,10 +12,11 @@ layout: post
 
 <p>So, you have to either modify the <code>load_paths</code> or use an absolute path, like this:</p>
 
-<pre class="textmate-source twilight"><code><span class="source source_ruby"><span class="string string_quoted string_quoted_other string_quoted_other_literal string_quoted_other_literal_lower string_quoted_other_literal_lower_ruby"><span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_begin punctuation_definition_string_begin_ruby">%w(</span> rubygems wordpress <span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_end punctuation_definition_string_end_ruby">)</span></span><span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>each <span class="punctuation punctuation_section punctuation_section_scope punctuation_section_scope_ruby">{</span><span class="meta meta_syntax meta_syntax_ruby meta_syntax_ruby_start-block"> </span><span class="punctuation punctuation_separator punctuation_separator_variable punctuation_separator_variable_ruby">|</span><span class="variable variable_other variable_other_block variable_other_block_ruby">lib</span><span class="punctuation punctuation_separator punctuation_separator_variable punctuation_separator_variable_ruby">|</span> <span class="meta meta_require meta_require_ruby"><span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">require</span> lib <span class="punctuation punctuation_section punctuation_section_scope punctuation_section_scope_ruby">}</span></span>
-load <span class="support support_class support_class_ruby">Gem</span><span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>required_location<span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">(</span><span class="string string_quoted string_quoted_single string_quoted_single_ruby"><span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_begin punctuation_definition_string_begin_ruby">'</span>wordpress<span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_end punctuation_definition_string_end_ruby">'</span></span><span class="punctuation punctuation_separator punctuation_separator_object punctuation_separator_object_ruby">,</span> <span class="string string_quoted string_quoted_single string_quoted_single_ruby"><span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_begin punctuation_definition_string_begin_ruby">'</span>wordpress/recipes/deploy.rb<span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_end punctuation_definition_string_end_ruby">'</span></span><span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">)</span>
-load <span class="string string_quoted string_quoted_single string_quoted_single_ruby"><span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_begin punctuation_definition_string_begin_ruby">'</span>config/deploy<span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_end punctuation_definition_string_end_ruby">'</span></span>
-</span></code></pre>
+{% highlight ruby %}
+%w( rubygems wordpress ).each { |lib| require lib }
+load Gem.required_location('wordpress', 'wordpress/recipes/deploy.rb')
+load 'config/deploy'
+{% endhighlight %}
 
 <p>This is what I did for a while, but something didn't seem right. My <code>Capfile</code> didn't look as nice as I expected, and I wasn't using <a href="http://github.com/jamis/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/configuration/loading.rb#L104"><code>require</code></a>, whose comments clearly mention third-party recipes.</p>
 
@@ -25,16 +26,19 @@ load <span class="string string_quoted string_quoted_single string_quoted_single
 
 <p>If you wrap your <code>deploy.rb</code> recipes in a load block, like this:</p>
 
-<pre class="textmate-source twilight"><code><span class="source source_ruby source_ruby_rails"><span class="support support_class support_class_ruby">Capistrano</span><span class="punctuation punctuation_separator punctuation_separator_other punctuation_separator_other_ruby">::</span><span class="support support_class support_class_ruby">Configuration</span><span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>instance<span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">(</span><span class="constant constant_other constant_other_symbol constant_other_symbol_ruby"><span class="punctuation punctuation_definition punctuation_definition_constant punctuation_definition_constant_ruby">:</span>must_exist</span><span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">)</span><span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>load <span class="keyword keyword_control keyword_control_start-block keyword_control_start-block_ruby">do
-</span><span class="comment comment_line comment_line_number-sign comment_line_number-sign_ruby">  <span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_ruby">#</span> previous file contents here
-</span><span class="keyword keyword_control keyword_control_ruby">end</span></span></code></pre>
+{% highlight ruby %}
+Capistrano::Configuration.instance(:must_exist).load do
+  # previous file contents here
+end
+{% endhighlight %}
 
 <p>You can simplify your <code>Capfile</code> with a shorter <code>require</code> statement:</p>
 
-<pre class="textmate-source twilight"><code><span class="source source_ruby"><span class="meta meta_require meta_require_ruby"><span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">require</span> <span class="string string_quoted string_quoted_single string_quoted_single_ruby"><span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_begin punctuation_definition_string_begin_ruby">'</span>rubygems<span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_end punctuation_definition_string_end_ruby">'</span></span></span>
-<span class="meta meta_require meta_require_ruby"><span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">require</span> <span class="string string_quoted string_quoted_single string_quoted_single_ruby"><span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_begin punctuation_definition_string_begin_ruby">'</span>wordpress/recipes/deploy<span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_end punctuation_definition_string_end_ruby">'</span></span></span>
-load    <span class="string string_quoted string_quoted_single string_quoted_single_ruby"><span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_begin punctuation_definition_string_begin_ruby">'</span>config/deploy<span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_end punctuation_definition_string_end_ruby">'</span></span>
-</span></code></pre>
+{% highlight ruby %}
+require 'rubygems'
+require 'wordpress/recipes/deploy'
+load    'config/deploy'
+{% endhighlight %}
 
 <p>Nice. I'm still a little bummed by the <code>require</code> / <code>load</code> imbalance, but on the whole this feels more like things were supposed to be.</p>
 
