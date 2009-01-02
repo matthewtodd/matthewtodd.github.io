@@ -1,4 +1,4 @@
---- 
+---
 title: Rake::StakeoutTask
 layout: post
 ---

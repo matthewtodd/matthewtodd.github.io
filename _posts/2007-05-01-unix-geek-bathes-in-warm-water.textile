@@ -1,4 +1,4 @@
---- 
+---
 title: Unix geek bathes in warm water
 layout: post
 ---
@@ -30,7 +30,7 @@ MAILTO=''
 Here's the <tt>remind</tt> script, just a simple wrapper around <tt><a href="http://www.growl.info/documentation/growlnotify.php">growlnotify</a></tt>:
 
 {% highlight bash %}
-matthew-todds-computer:~ mtodd$ cat /usr/local/bin/remind 
+matthew-todds-computer:~ mtodd$ cat /usr/local/bin/remind
 #!/bin/sh
 
 /opt/local/bin/growlnotify     \\

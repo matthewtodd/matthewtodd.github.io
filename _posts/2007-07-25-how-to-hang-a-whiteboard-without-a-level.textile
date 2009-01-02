@@ -1,4 +1,4 @@
---- 
+---
 title: How to Hang a Whiteboard without a Level
 layout: post
 ---

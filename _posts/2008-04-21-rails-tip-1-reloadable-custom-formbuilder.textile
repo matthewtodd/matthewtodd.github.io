@@ -1,4 +1,4 @@
---- 
+---
 title: "Rails tip #1: Reloadable custom FormBuilder"
 layout: post
 ---

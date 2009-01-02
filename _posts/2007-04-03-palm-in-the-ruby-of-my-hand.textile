@@ -1,4 +1,4 @@
---- 
+---
 title: Palm in the Ruby of my hand
 layout: post
 ---

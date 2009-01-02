@@ -1,4 +1,4 @@
---- 
+---
 title: "Rails tip #3: Filter BLOBs from ActiveRecord logging"
 layout: post
 ---

@@ -1,4 +1,4 @@
---- 
+---
 title: Hurray! It Works!
 layout: post
 ---

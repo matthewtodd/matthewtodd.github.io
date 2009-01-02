@@ -1,4 +1,4 @@
---- 
+---
 title: The Water Game
 layout: post
 ---

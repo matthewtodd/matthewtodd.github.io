@@ -1,4 +1,4 @@
---- 
+---
 title: We just made bagels!
 layout: post
 ---

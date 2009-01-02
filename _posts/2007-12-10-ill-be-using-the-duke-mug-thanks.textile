@@ -1,4 +1,4 @@
---- 
+---
 title: I'll be using the Duke mug, thanks.
 layout: post
 ---

@@ -1,4 +1,4 @@
---- 
+---
 title: Wedding reception, Moshi style
 layout: post
 ---

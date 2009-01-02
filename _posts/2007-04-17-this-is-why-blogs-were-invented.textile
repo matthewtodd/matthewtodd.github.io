@@ -1,4 +1,4 @@
---- 
+---
 title: This is why blogs were invented
 layout: post
 ---

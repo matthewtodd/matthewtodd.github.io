@@ -1,4 +1,4 @@
---- 
+---
 title: A Mail.app AppleScript Rule Action
 layout: post
 ---

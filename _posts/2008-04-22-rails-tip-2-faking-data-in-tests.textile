@@ -1,4 +1,4 @@
---- 
+---
 title: "Rails tip #2: Faking DATA in tests"
 layout: post
 ---

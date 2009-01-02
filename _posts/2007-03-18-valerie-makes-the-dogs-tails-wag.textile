@@ -1,4 +1,4 @@
---- 
+---
 title: Valerie makes the dogs' tails wag
 layout: post
 ---
