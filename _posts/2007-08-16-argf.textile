@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 34
 title: ARGF
-wordpress_url: http://www.matthewtodd.org/2007/08/16/argf/
 layout: post
 ---
 Every few months or so, I get to help email out the <a href="http://www.amanikids.org">Amani</a> newsletters by taking everyone's address books and merging them together. (It's not ideal; requiring unsubscribing to be a manual process makes it all too easy to forget and annoy some people. Changes are afoot.)

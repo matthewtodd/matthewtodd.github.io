@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 7
 title: "Next Steps: Learning Swahili"
-wordpress_url: http://www.matthewtodd.org/2006/12/11/next-steps-learning-swahili/
 layout: post
 ---
 <a href="http://www.flickr.com/photos/mtodd/314819386/"><img src="http://static.flickr.com/101/314819386_ad59758fc4.jpg" width="500" height="375" alt="Our living room" /></a>

@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 54
 title: Kilimanjaro
-wordpress_url: http://matthewtodd.org/?p=54
 layout: post
 ---
 My trouble with blogging is that when I'm doing things I'd write about, I don't have any time to write about them. So:

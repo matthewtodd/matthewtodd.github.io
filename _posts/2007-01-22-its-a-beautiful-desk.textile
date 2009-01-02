@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 10
 title: It's a beautiful desk
-wordpress_url: http://www.matthewtodd.org/2007/01/22/its-a-beautiful-desk/
 layout: post
 ---
 <a href="http://www.flickr.com/photos/mtodd/365753285/" title="Photo Sharing"><img src="http://farm1.static.flickr.com/147/365753285_3148477dbf.jpg" width="500" height="333" alt="Desk!" /></a>

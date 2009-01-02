@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 32
 title: Area Man Knows All The Shortcut Keys
-wordpress_url: http://www.matthewtodd.org/2007/07/27/dude-it-really-is-faster/
 layout: post
 ---
 So, this morning, Valerie hands me our copy of <em>The Onion Ad Nauseam: Fanfare for the Area Man</em>, flopped open to <a href="http://www.theonion.com/content/node/38976" title="Area Man Knows All The Shortcut Keys">page 199</a>.

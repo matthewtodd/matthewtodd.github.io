@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 14
 title: capistrano-ext-textdrive
-wordpress_url: http://www.matthewtodd.org/2007/02/20/capistrano-ext-textdrive/
 layout: post
 ---
 I've finally found a workable set of deployment practices for getting my little rails apps up and running in shared hosting at TextDrive. None of the actual mechanics are particularly en vogue these days -- I'm just using plain old lighttpd with external fcgi processes.

@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 21
 title: Palm in the Ruby of my hand
-wordpress_url: http://www.matthewtodd.org/2007/04/03/palm-in-the-ruby-of-my-hand/
 layout: post
 ---
 Today I've been playing with <a href="http://www.pilot-link.org/pilot-link">pilot-link</a> and <a href="http://rubyinline.rubyforge.org/">RubyInline</a>.

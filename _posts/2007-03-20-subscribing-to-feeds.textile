@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 19
 title: Subscribing to Feeds
-wordpress_url: http://www.matthewtodd.org/2007/03/20/subscribing-to-feeds/
 layout: post
 ---
 If you'd like to give the <a href="/2007/03/15/reading/">Bible-reading feeds</a> a try but don't know where to start, here's a quick guide:

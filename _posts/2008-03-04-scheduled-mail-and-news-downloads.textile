@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 44
 title: Scheduled Mail and News Downloads
-wordpress_url: http://www.matthewtodd.org/2008/03/04/scheduled-mail-and-news-downloads/
 layout: post
 ---
 Turning off automatic downloading in Mail and NetNewsWire has been good for me: I've had fewer interruptions and freer bandwidth during the workday.

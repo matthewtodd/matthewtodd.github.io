@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 31
 title: My Pamplona
-wordpress_url: http://www.matthewtodd.org/2007/07/26/my-pamplona/
 layout: post
 ---
 Dave and I run a steep route these days, a thin strip of broken pavement cutting through thorny scrub brush well above the Karanga River. We run mostly in the quiet, nodding and greeting the mamas and the old men making their way home, occasionally chatting about our days.

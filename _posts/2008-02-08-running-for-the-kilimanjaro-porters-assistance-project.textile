@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 43
 title: Running for the Kilimanjaro Porters Assistance Project
-wordpress_url: http://www.matthewtodd.org/2008/02/08/supporting-the-kilimanjaro-porters-assistance-project/
 layout: post
 ---
 <p class="update"><strong>Update, March 1st:</strong> Wow, thanks, everyone, we're pretty much there! (Anybody want to take us <a href="http://www.firstgiving.org/matthewtodd">over the top</a>?) The race is in just over 10 hours now---10:30pm Saturday EST in the States, 6:30am Sunday here. I'll be sure to post some pictures!</p>

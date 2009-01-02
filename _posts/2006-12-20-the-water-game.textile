@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 8
 title: The Water Game
-wordpress_url: http://www.matthewtodd.org/2006/12/20/the-water-game/
 layout: post
 ---
 To be a little safer, we boil all our drinking water and keep it in a bunch of reused 1.5 liter bottles by the sink. My presence here has at least doubled most of Valerie's resource consumption, and especially so with water: I've been drinking about a gallon of water a day, what with all the running.

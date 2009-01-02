@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 51
 title: "Rails tip #4: Writing Capistrano recipes to be loaded from gems"
-wordpress_url: http://www.matthewtodd.org/?p=51
 layout: post
 ---
 <p>Making a gem of your custom Capistrano recipes is a nice way to remove duplicated knowledge across your Rails projects.</p>

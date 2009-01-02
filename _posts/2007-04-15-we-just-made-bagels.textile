@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 23
 title: We just made bagels!
-wordpress_url: http://www.matthewtodd.org/2007/04/15/we-just-made-bagels/
 layout: post
 ---
 Sometimes in the middle of a long downhill hike, a Wendy's Frosty is <em>exactly</em> what my body wants, and the imagining is almost as good as the tasting.

@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 48
 title: "Rails tip #1: Reloadable custom FormBuilder"
-wordpress_url: http://www.matthewtodd.org/?p=48
 layout: post
 ---
 August Lilleaas has <a href="http://august.lilleaas.net/posts/form-builders-are-easy">a nice writeup</a> on making your own <code>FormBuilder</code>. Towards the end, he describes wiring it up as the default:

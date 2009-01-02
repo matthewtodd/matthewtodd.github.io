@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 26
 title: Rake::StakeoutTask
-wordpress_url: http://www.matthewtodd.org/2007/05/03/rakestakeouttask/
 layout: post
 ---
 I've been writing a bunch of rdoc lately, and <span title="Save">&#x2318;S</span>/<span title="Run Rake Task">&#x2303;&#x21e7;R</span>/<span title="Select default rerdoc task from last time">&#x21a9;</span>/<span title="Close RakeMate window">&#x2318;W</span>/<span title="Switch to Safari">&#x2318;&#x21e5;</span>/<span title="Reload Page">&#x2318;R</span> was starting to get pretty cumbersome. (That's <code>rake rerdoc</code> from TextMate, close the output window, switch to Safari and reload.)

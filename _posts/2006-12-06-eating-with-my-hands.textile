@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 6
 title: Eating with my Hands
-wordpress_url: http://www.matthewtodd.org/2006/12/06/eating-with-my-hands/
 layout: post
 ---
 <a href="http://www.flickr.com/photos/mtodd/314819961/"><img src="http://static.flickr.com/100/314819961_2f43019c4b.jpg" width="500" height="375" alt="Amani Christmas party" /></a>

@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 20
 title: rsync &#45;&#45;partial
-wordpress_url: http://www.matthewtodd.org/2007/03/29/rsync-partial/
 layout: post
 ---
 Living here in East Africa, I'm learning how to be productive with a less-than-blindingly-fast internet connection. It's fun, really: another externally-imposed constraint that calls forth creativity.

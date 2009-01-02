@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 15
 title: Yay!
-wordpress_url: http://www.matthewtodd.org/2007/03/07/yay/
 layout: post
 ---
 <a href="http://www.flickr.com/photos/mtodd/413443701/" title="Photo Sharing"><img src="http://farm1.static.flickr.com/130/413443701_f224bb9559.jpg" width="500" height="375" alt="Wheelbarrow" /></a>

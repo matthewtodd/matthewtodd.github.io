@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 25
 title: Unix geek bathes in warm water
-wordpress_url: http://www.matthewtodd.org/2007/05/01/unix-geek-bathes-in-warm-water/
 layout: post
 ---
 So I don't burden my poor brain trying to remember stuff, I've rigged up some <tt>crontab</tt> entries that fire off <a href="http://www.growl.info/">Growl</a> reminder messages every so often:

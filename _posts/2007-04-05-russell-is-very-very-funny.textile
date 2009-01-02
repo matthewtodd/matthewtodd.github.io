@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 22
 title: Russell is very, very funny
-wordpress_url: http://www.matthewtodd.org/2007/04/05/russell-is-very-very-funny/
 layout: post
 ---
 If you read this site, you're probably already my mom. But, in the off chance you're somebody else, you may not know that

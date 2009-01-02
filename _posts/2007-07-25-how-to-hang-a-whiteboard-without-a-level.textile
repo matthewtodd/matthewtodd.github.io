@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 30
 title: How to Hang a Whiteboard without a Level
-wordpress_url: http://www.matthewtodd.org/2007/07/25/how-to-hang-a-whiteboard-without-a-level/
 layout: post
 ---
 Whiteboards are my favorite thinking tool, because they're big and they don't waste paper. We just got one!

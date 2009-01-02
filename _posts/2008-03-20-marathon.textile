@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 45
 title: Marathon
-wordpress_url: http://www.matthewtodd.org/2008/03/20/marathon/
 layout: post
 ---
 Looking back at the marathon, I feel really good about it. I had tried to stick well to this <a href="http://www.halhigdon.com/marathon/novices.html">novice training schedule</a> I'd found online, and by the morning of the race, even though the bottom was dropping out of my chest, I knew I'd be able to finish alright.

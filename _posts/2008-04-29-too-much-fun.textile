@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 53
 title: Too much fun
-wordpress_url: http://www.matthewtodd.org/?p=53
 layout: post
 ---
 {% highlight ruby %}

@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 13
 title: Running
-wordpress_url: http://www.matthewtodd.org/2007/02/14/running/
 layout: post
 ---
 I decided a while back to give myself a little bit of routine by training for the <a href="http://www.kilimanjaromarathon.com/">Kilimanjaro Half Marathon</a>. I hadn't ever really run more than 3 miles before, but so far, so good, and the race is coming up soon now -- just 2&frac12; weeks!

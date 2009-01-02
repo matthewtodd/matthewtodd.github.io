@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 56
 title: HasDigest
-wordpress_url: http://matthewtodd.org/?p=56
 layout: post
 ---
 Finding I was generating SHA1 digests in a bunch of places in my code, I spent Friday writing up a <a href="http://github.com/matthewtodd/has_digest">quick rails plugin</a> (with <a href="http://github.com/matthewtodd/has_digest/tree/master/test/has_digest_test.rb">tests</a> and a helpful <a href="http://github.com/matthewtodd/has_digest/tree/master/shoulda_macros/has_digest.rb">shoulda macro</a>) to make things easier:

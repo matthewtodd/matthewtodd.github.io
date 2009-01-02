@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 27
 title: A Mail.app AppleScript Rule Action
-wordpress_url: http://www.matthewtodd.org/2007/05/25/a-mailapp-applescript-rule-action/
 layout: post
 ---
 I often forward email messages along to Valerie, but I usually clean the noise out of them first---a process of just enough repetitive clicking and typing to make me want to write some code. (Hey, who are we if we don't play?)

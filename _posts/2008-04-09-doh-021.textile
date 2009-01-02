@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 47
 title: doh 0.2.1
-wordpress_url: http://www.matthewtodd.org/?p=47
 layout: post
 ---
 Doh stops your version control commit if you've forgotten to add some files.

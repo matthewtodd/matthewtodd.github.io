@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 16
 title: Reading
-wordpress_url: http://www.matthewtodd.org/2007/03/15/reading/
 layout: post
 ---
 <p class="update"><strong>Update:</strong> there were (waves hands) "technical issues" that kept these feeds from showing up in Google Reader. Those responsible have been sacked.</p>

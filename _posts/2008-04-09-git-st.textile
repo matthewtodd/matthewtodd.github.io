@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 46
 title: git st
-wordpress_url: http://www.matthewtodd.org/?p=46
 layout: post
 ---
 <pre><code>

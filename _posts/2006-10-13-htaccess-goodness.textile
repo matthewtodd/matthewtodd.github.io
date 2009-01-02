@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 4
 title: .htaccess goodness
-wordpress_url: http://todd.durham.nc.us/blog/2006/10/13/htaccess-goodness/
 layout: post
 ---
 I just found a nice bit of .htaccess goodness:

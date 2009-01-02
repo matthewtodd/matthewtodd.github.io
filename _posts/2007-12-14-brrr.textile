@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 40
 title: Brrr!
-wordpress_url: http://www.matthewtodd.org/2007/12/14/brrr/
 layout: post
 ---
 <a href="http://www.flickr.com/photos/mtodd/2108716915/" title="Beardcicle by Matthew Todd, on Flickr"><img src="http://farm3.static.flickr.com/2225/2108716915_bf20943c32.jpg" width="500" height="375" alt="Beardcicle" /></a>

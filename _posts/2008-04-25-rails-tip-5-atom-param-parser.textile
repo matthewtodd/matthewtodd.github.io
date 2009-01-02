@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 52
 title: "Rails tip #5: Atom param parser"
-wordpress_url: http://www.matthewtodd.org/?p=52
 layout: post
 ---
 <p>The Atom Publishing Protocol is wonderfully RESTful, so it's a natural fit for a Rails application.</p>

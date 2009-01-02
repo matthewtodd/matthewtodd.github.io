@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 36
 title: Using <tt>deprec</tt> behind an HTTP Proxy
-wordpress_url: http://www.matthewtodd.org/2007/09/11/using-deprec-behind-an-http-proxy/
 layout: post
 ---
 Yesterday I had a fair bit of difficulty because the app server I was setting up with <a href="http://www.deprec.org/"><code>deprec</code></a> lives behind an http proxy.

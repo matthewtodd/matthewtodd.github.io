@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 35
 title: Preventing Commits with Unadded Files
-wordpress_url: http://www.matthewtodd.org/2007/08/17/preventing-commits-with-unadded-files/
 layout: post
 ---
 Today I added a new file to an in-progress Rails app, watched all the tests pass, and committed. Except I forgot to <code>svn add</code> the new file. <strong>Again.</strong>

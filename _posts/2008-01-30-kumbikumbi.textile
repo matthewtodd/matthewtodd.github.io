@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 42
 title: Kumbikumbi
-wordpress_url: http://www.matthewtodd.org/2008/01/30/kumbikumbi/
 layout: post
 ---
 At the first big rain of the season, we get swarmed with these huge flying termites. Swarmed! They hatch, live for a day, and die. So, the last few nights, our house was full of these mad zombie termites lurching about in the throes of death.

@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 50
 title: "Rails tip #3: Filter BLOBs from ActiveRecord logging"
-wordpress_url: http://www.matthewtodd.org/?p=50
 layout: post
 ---
 <p>We threw <a href="http://github.com/technoweenie/attachment_fu"><code>attachment_fu</code></a> into our app the other day, starting off with the default <code>:db_file</code> setting to store images in the database. (I've been bitten by this approach before, but this time around I'm intrigued by page caching. We'll see.)</p>

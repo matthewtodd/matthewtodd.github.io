@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 17
 title: Valerie makes the dogs' tails wag
-wordpress_url: http://www.matthewtodd.org/2007/03/18/valerie-makes-the-dogs-tails-wag/
 layout: post
 ---
 <embed style="width:500px; height:402px;" id="VideoPlayback" type="application/x-shockwave-flash" src="http://video.google.com/googleplayer.swf?docId=5924222373116259234&hl=en" flashvars=""> </embed>

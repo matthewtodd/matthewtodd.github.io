@@ -1,7 +1,5 @@
 --- 
-wordpress_id: 38
 title: Hurray! It Works!
-wordpress_url: http://www.matthewtodd.org/2007/10/29/hurray-it-works/
 layout: post
 ---
 <a href="http://www.flickr.com/photos/mtodd/1797916884/" title="Photo Sharing"><img src="http://farm3.static.flickr.com/2127/1797916884_9b81694b62.jpg" width="500" height="375" alt="Washing Machine" /></a>
