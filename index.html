@@ -1,0 +1,20 @@
+---
+layout: default
+title: Matthew Todd
+---
+
+{% for post in site.posts limit:3 %}
+  <div class="atomentry">
+    <h2 class="title">
+      <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+    </h2>
+
+		<p class="author">
+		  Posted on <abbr class="published"><span class="posted_date">{{ post.date | date: "%B %e, %Y"}}</span></abbr>
+    </p>
+
+    <div class="content">
+      {{ post.content }}
+    </div>
+  </div>
+{% endfor%}
