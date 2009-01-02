@@ -1,0 +1,15 @@
+--- 
+wordpress_id: 13
+title: Running
+wordpress_url: http://www.matthewtodd.org/2007/02/14/running/
+layout: post
+---
+I decided a while back to give myself a little bit of routine by training for the <a href="http://www.kilimanjaromarathon.com/">Kilimanjaro Half Marathon</a>. I hadn't ever really run more than 3 miles before, but so far, so good, and the race is coming up soon now -- just 2&frac12; weeks!
+
+The actual <a href="http://www.kilimanjaromarathon.com/routemap3.htm">race route</a> runs along a very narrow, busy road, so I've been running instead up into the villages above town. After about 4k the pavement turns into dirt, and I pass through coffee fields and over a gorgeous rushing river, just like something you'd see in the Smokies. Lots of kids are walking home from school at the same time -- sometimes they laugh and run with me, sometimes they yell "<span title="white person" style="border-bottom-width:1px; border-bottom-style:dotted">Mzungu</span>!" and ask for money, but all in all it's pretty fun.
+
+On a geek note, one thing that's made a huge difference in my training is this GPS doohickey Dad gave me. It figures out how far I've gone (there's no way I could tell that otherwise, since we couldn't drive these routes) and how fast I'm going -- and it even beeps when I've gone halfway so I'll know to turn around and go home!
+
+<a href="http://www.flickr.com/photos/mtodd/389948782/" title="Photo Sharing"><img src="http://farm1.static.flickr.com/160/389948782_64318bf8a9.jpg" width="500" height="375" alt="GPS doohickey" /></a>
+
+I suppose that's all there is to say for now, but I'll be sure to write about how the race goes!

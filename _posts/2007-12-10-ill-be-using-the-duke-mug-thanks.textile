@@ -1,0 +1,9 @@
+--- 
+wordpress_id: 39
+title: I'll be using the Duke mug, thanks.
+wordpress_url: http://www.matthewtodd.org/2007/12/10/ill-be-using-the-duke-mug-thanks/
+layout: post
+---
+<a href="http://www.flickr.com/photos/mtodd/2101452244/" title="I'll be using the Duke mug, thanks. by Matthew Todd, on Flickr"><img src="http://farm3.static.flickr.com/2014/2101452244_d6b2534817.jpg" width="500" height="374" alt="I'll be using the Duke mug, thanks." /></a>
+
+This morning, Valerie's mom very purposefully set out these mugs for us to use. I (and the moose) replied in kind.

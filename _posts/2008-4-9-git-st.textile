@@ -1,0 +1,15 @@
+--- 
+wordpress_id: 46
+title: git st
+wordpress_url: http://www.matthewtodd.org/?p=46
+layout: post
+---
+<pre><code>
+[shoes:~/Code/wordpress] <span style="font-weight:normal; color:blue">mtodd</span>$ git st
+git: &#39;st&#39; is not a git-command. See &#39;git &#45;&#45;help&#39;.
+[shoes:~/Code/wordpress] <span style="font-weight:normal; color:blue">mtodd</span>$ git config &#45;&#45;global alias.st status
+[shoes:~/Code/wordpress] <span style="font-weight:normal; color:blue">mtodd</span>$ git st
+# On branch master
+nothing to commit (working directory clean)
+[shoes:~/Code/wordpress] <span style="font-weight:normal; color:blue">mtodd</span>$ 
+</code></pre>

@@ -1,0 +1,11 @@
+--- 
+wordpress_id: 28
+title: Safari!
+wordpress_url: http://www.matthewtodd.org/2007/07/09/safari/
+layout: post
+---
+<a href="http://www.flickr.com/photos/mtodd/761060222/" title="Photo Sharing"><img src="http://farm2.static.flickr.com/1364/761060222_e003846474.jpg" width="500" height="375" alt="Maasai" style="border: 1px solid #ccc;" /></a>
+
+<a href="http://www.flickr.com/photos/mtodd/761069528/" title="Photo Sharing"><img src="http://farm2.static.flickr.com/1295/761069528_91552e3afe.jpg" width="500" height="375" alt="Hyena" style="border: 1px solid #ccc;" /></a>
+
+More at <a href="http://www.flickr.com/photos/mtodd/tags/safari/">Flickr</a>.

@@ -1,0 +1,9 @@
+--- 
+wordpress_id: 40
+title: Brrr!
+wordpress_url: http://www.matthewtodd.org/2007/12/14/brrr/
+layout: post
+---
+<a href="http://www.flickr.com/photos/mtodd/2108716915/" title="Beardcicle by Matthew Todd, on Flickr"><img src="http://farm3.static.flickr.com/2225/2108716915_bf20943c32.jpg" width="500" height="375" alt="Beardcicle" /></a>
+
+So, I just ran <a href="http://www.halhigdon.com/marathon/train7n.html">12 miles</a> in the snow around <a href="http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=dean+park+shrewsbury+ma&sll=42.299705,-71.697815&sspn=0.008412,0.016115&ie=UTF8&ll=42.299707,-71.697807&spn=0.008412,0.016115&t=h&z=16&om=1">Dean Park</a>!

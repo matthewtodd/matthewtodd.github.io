@@ -1,0 +1,23 @@
+--- 
+wordpress_id: 16
+title: Reading
+wordpress_url: http://www.matthewtodd.org/2007/03/15/reading/
+layout: post
+---
+<p class="update"><strong>Update:</strong> there were (waves hands) "technical issues" that kept these feeds from showing up in Google Reader. Those responsible have been sacked.</p>
+
+I've felt for some time that it would help me to read through the Bible -- but I've also known that my chances of sticking through to the end are very slim, and that I would need some help to finish.
+
+At times like this, one only need ask oneself, "Well, am I a programmer, or <em>am I a programmer?</em>" (Hollah.)
+
+<h3>The Result</h3>
+
+I've set up a new web site that automatically blogs the Bible, piece at a time, in a way that news readers can understand:
+
+<a href="http://www.flickr.com/photos/mtodd/421860312/" title="Photo Sharing"><img src="http://farm1.static.flickr.com/147/421860312_50b80b7a2a.jpg" width="500" height="375" alt="Reading" style="border: 1px solid black" /></a>
+
+I've been reading this way since last July, and it's been good. Talk with me sometime and I'll bend your ear about some of the things I've learned.
+
+I've also been tweaking the software along the way -- the text is now easier to read without verse numbers and footnotes -- and it's ready to announce:
+
+You can subscribe at <a href="http://reading.matthewtodd.org">reading.matthewtodd.org</a>, starting "In the beginning" today. :)

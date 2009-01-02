@@ -1,0 +1,43 @@
+--- 
+wordpress_id: 52
+title: "Rails tip #5: Atom param parser"
+wordpress_url: http://www.matthewtodd.org/?p=52
+layout: post
+---
+<p>The Atom Publishing Protocol is wonderfully RESTful, so it's a natural fit for a Rails application.</p>
+
+<p>One thing you'll run into, though, is that AtomPub posts <code>application/atom+xml</code> data rather than the usual <code>application/x-www-form-urlencoded</code> stuff, so you'll have to write some extra code to handle it.</p>
+
+<p>The good news is that <code>ActionController::Base</code> helps you out. Instead of having to branch on the request type and fatten your controller, you can <a href="http://github.com/rails/rails/tree/c8da518bbfedc2a06b1d96912ddae00e57f21748/actionpack/lib/action_controller/base.rb#L292">register a custom <code>param_parser</code></a>.</p>
+
+<p>So, we wrote <code>Hash.from_atom</code> to transform the incoming xml into the usual <code>{&nbsp;:entry&nbsp;=> {&nbsp;...&nbsp;}&nbsp;}</code> params. Then, we registered it in an initializer:</p>
+
+<pre class="textmate-source twilight"><code><span class="source source_ruby source_ruby_rails"><span class="support support_class support_class_ruby">ActionController</span><span class="punctuation punctuation_separator punctuation_separator_other punctuation_separator_other_ruby">::</span><span class="support support_class support_class_ruby">Base</span><span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>param_parsers<span class="punctuation punctuation_section punctuation_section_array punctuation_section_array_ruby">[</span><span class="support support_class support_class_ruby">Mime</span><span class="punctuation punctuation_separator punctuation_separator_other punctuation_separator_other_ruby">::</span><span class="variable variable_other variable_other_constant variable_other_constant_ruby">ATOM</span><span class="punctuation punctuation_section punctuation_section_array punctuation_section_array_ruby">]</span> <span class="keyword keyword_operator keyword_operator_assignment keyword_operator_assignment_ruby">=</span> lambda <span class="keyword keyword_control keyword_control_start-block keyword_control_start-block_ruby">do </span><span class="punctuation punctuation_separator punctuation_separator_variable punctuation_separator_variable_ruby">|</span><span class="variable variable_other variable_other_block variable_other_block_ruby">body</span><span class="punctuation punctuation_separator punctuation_separator_variable punctuation_separator_variable_ruby">|</span>
+  <span class="support support_class support_class_ruby">Hash</span><span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>from_atom<span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">(</span>body<span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">)</span>
+<span class="keyword keyword_control keyword_control_ruby">end</span></span></code></pre>
+
+<p>And our controller can now handle either regular form postings or AtomPub entries with the same line of code:</p>
+
+<pre class="textmate-source twilight"><code><span class="source source_ruby source_ruby_rails"><span class="meta meta_rails meta_rails_controller"><span class="meta meta_class meta_class_ruby"><span class="keyword keyword_control keyword_control_class keyword_control_class_ruby">class</span> <span class="entity entity_name entity_name_type entity_name_type_class entity_name_type_class_ruby">EntriesController<span class="entity entity_other entity_other_inherited-class entity_other_inherited-class_ruby"> <span class="punctuation punctuation_separator punctuation_separator_inheritance punctuation_separator_inheritance_ruby">&lt;</span> ApplicationController</span></span></span>
+  <span class="meta meta_function meta_function_method meta_function_method_without-arguments meta_function_method_without-arguments_ruby"><span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">create</span></span>
+    <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby"><span class="punctuation punctuation_definition punctuation_definition_variable punctuation_definition_variable_ruby">@</span>entry</span> <span class="keyword keyword_operator keyword_operator_assignment keyword_operator_assignment_ruby">=</span> <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby"><span class="punctuation punctuation_definition punctuation_definition_variable punctuation_definition_variable_ruby">@</span>collection</span><span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>entries<span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>build<span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">(</span>params<span class="punctuation punctuation_section punctuation_section_array punctuation_section_array_ruby">[</span><span class="constant constant_other constant_other_symbol constant_other_symbol_ruby"><span class="punctuation punctuation_definition punctuation_definition_constant punctuation_definition_constant_ruby">:</span>entry</span><span class="punctuation punctuation_section punctuation_section_array punctuation_section_array_ruby">]</span><span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">)</span>
+<span class="comment comment_line comment_line_number-sign comment_line_number-sign_ruby">    <span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_ruby">#</span> ...
+</span>  <span class="keyword keyword_control keyword_control_ruby">end</span>
+</span><span class="keyword keyword_control keyword_control_ruby">end</span>
+</span></code></pre>
+
+<p>Not bad.</p>
+
+<h3>5 Rails tips</h3>
+
+<p>Each day this week, <a href="http://youtube.com/watch?v=J35CuC3ywnc">Joachim</a> and I will post something we've learned in our time programming together. It's fun to do, and we might just <a href="http://railscasts.com/contest">win something</a> as well.</p>
+
+<p>So far, we've written:</p>
+
+<ol>
+  <li><a href="http://www.matthewtodd.org/2008/04/21/rails-tip-1-reloadable-custom-formbuilder/">Reloadable custom FormBuilder</a></li>
+  <li><a href="http://www.matthewtodd.org/2008/04/22/rails-tip-2-faking-data-in-tests/">Faking DATA in tests</a></li>
+  <li><a href="http://www.matthewtodd.org/2008/04/23/rails-tip-3-filter-blobs-from-activerecord-logging/">Filter BLOBs from ActiveRecord logging</a></li>
+  <li><a href="http://www.matthewtodd.org/2008/04/24/rails-tip-4-writing-capistrano-recipes-to-be-loaded-from-gems/">Writing Capistrano recipes to be loaded from gems</a></li>
+  <li>Atom param parser</li>
+</ol>

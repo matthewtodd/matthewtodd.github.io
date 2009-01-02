@@ -1,0 +1,7 @@
+--- 
+wordpress_id: 5
+title: Wedding pictures
+wordpress_url: http://todd.durham.nc.us/blog/2006/12/01/wedding-pictures/
+layout: post
+---
+<a href="http://www.flickr.com/photos/mtodd/tags/wedding" title="Wedding pictures on Flickr"><img src="http://static.flickr.com/99/310954686_ff6e26bbc8.jpg" width="500" height="334" alt="Goat" /></a>

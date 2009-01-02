@@ -1,0 +1,42 @@
+--- 
+wordpress_id: 47
+title: doh 0.2.1
+wordpress_url: http://www.matthewtodd.org/?p=47
+layout: post
+---
+Doh stops your version control commit if you've forgotten to add some files.
+
+I last <a href="http://www.matthewtodd.org/2007/08/17/preventing-commits-with-unadded-files/">wrote about Doh</a> in August. You may remember this part:
+
+<pre><code>
+DDDDDDDDDDDDD                         hhhhhhh
+ D::::::::::::DDD                      h:::::h
+ D:::::::::::::::DD                    h:::::h
+ DDD:::::DDDDD:::::D                   h:::::h
+   D:::::D    D:::::D    ooooooooooo    h::::h hhhhh
+   D:::::D     D:::::D oo:::::::::::oo  h::::hh:::::hhh
+   D:::::D     D:::::Do:::::::::::::::o h::::::::::::::hh
+   D:::::D     D:::::Do:::::ooooo:::::o h:::::::hhh::::::h
+   D:::::D     D:::::Do::::o     o::::o h::::::h   h::::::h
+   D:::::D     D:::::Do::::o     o::::o h:::::h     h:::::h
+   D:::::D     D:::::Do::::o     o::::o h:::::h     h:::::h
+   D:::::D    D:::::D o::::o     o::::o h:::::h     h:::::h
+ DDD:::::DDDDD:::::D  o:::::ooooo:::::o h:::::h     h:::::h
+ D:::::::::::::::DD   o:::::::::::::::o h:::::h     h:::::h ......
+ D::::::::::::DDD      oo:::::::::::oo  h:::::h     h:::::h .::::.
+ DDDDDDDDDDDDD           ooooooooooo    hhhhhhh     hhhhhhh ......
+</code></pre>
+
+Since then, some nice things have happened:
+
+<ul>
+  <li>
+	<p>It's a (<a href="http://docs.matthewtodd.org/doh">somewhat documented</a>) gem:</p>
+	<pre><code>$ gem install doh --source http://gems.matthewtodd.org</code></pre>
+  </li>
+
+  <li>
+    <p>It has <code>git</code> support!</p>
+    <p>Doh tries to be smart about <code>git commit -a</code>, staying out of your way if you've only modified or deleted tracked files (exactly the things <code>-a</code> notices). See also the <a href="http://git.matthewtodd.org/?p=doh.git;a=blob;f=test/test_git.rb;h=6d15608043bbfa563937ce1bb300e120eca23edc;hb=922f7e84202b7ace05bd2e6d613c1b7a9f1fddae">test case</a>.</p>
+  </li>
+</ul>
