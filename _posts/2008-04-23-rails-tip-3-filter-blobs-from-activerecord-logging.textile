@@ -31,7 +31,7 @@ end
 <p>So far, we've written:</p>
 
 <ol>
-  <li><a href="http://www.matthewtodd.org/2008/04/21/rails-tip-1-reloadable-custom-formbuilder/">Reloadable custom FormBuilder</a></li>
-  <li><a href="http://www.matthewtodd.org/2008/04/22/rails-tip-2-faking-data-in-tests/">Faking DATA in tests</a></li>
+  <li><a href="/2008/04/21/rails-tip-1-reloadable-custom-formbuilder/">Reloadable custom FormBuilder</a></li>
+  <li><a href="/2008/04/22/rails-tip-2-faking-data-in-tests/">Faking DATA in tests</a></li>
   <li>Filter BLOBs from ActiveRecord logging</li>
 </ol>

@@ -51,6 +51,6 @@ WikiWord
 <p>So far, we've written:</p>
 
 <ol>
-  <li><a href="http://www.matthewtodd.org/2008/04/21/rails-tip-1-reloadable-custom-formbuilder/">Reloadable custom FormBuilder</a></li>
+  <li><a href="/2008/04/21/rails-tip-1-reloadable-custom-formbuilder/">Reloadable custom FormBuilder</a></li>
   <li>Faking DATA in tests</li>
 </ol>

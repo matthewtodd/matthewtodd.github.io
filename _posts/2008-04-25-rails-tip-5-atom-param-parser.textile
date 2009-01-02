@@ -36,9 +36,9 @@ end
 <p>So far, we've written:</p>
 
 <ol>
-  <li><a href="http://www.matthewtodd.org/2008/04/21/rails-tip-1-reloadable-custom-formbuilder/">Reloadable custom FormBuilder</a></li>
-  <li><a href="http://www.matthewtodd.org/2008/04/22/rails-tip-2-faking-data-in-tests/">Faking DATA in tests</a></li>
-  <li><a href="http://www.matthewtodd.org/2008/04/23/rails-tip-3-filter-blobs-from-activerecord-logging/">Filter BLOBs from ActiveRecord logging</a></li>
-  <li><a href="http://www.matthewtodd.org/2008/04/24/rails-tip-4-writing-capistrano-recipes-to-be-loaded-from-gems/">Writing Capistrano recipes to be loaded from gems</a></li>
+  <li><a href="/2008/04/21/rails-tip-1-reloadable-custom-formbuilder/">Reloadable custom FormBuilder</a></li>
+  <li><a href="/2008/04/22/rails-tip-2-faking-data-in-tests/">Faking DATA in tests</a></li>
+  <li><a href="/2008/04/23/rails-tip-3-filter-blobs-from-activerecord-logging/">Filter BLOBs from ActiveRecord logging</a></li>
+  <li><a href="/2008/04/24/rails-tip-4-writing-capistrano-recipes-to-be-loaded-from-gems/">Writing Capistrano recipes to be loaded from gems</a></li>
   <li>Atom param parser</li>
 </ol>

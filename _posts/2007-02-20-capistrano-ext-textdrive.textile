@@ -34,7 +34,7 @@ Run this once for your application. <a href="http://matthewtodd.org/svn/public/c
 <li>creates an empty mysql database named <code>"#{user}_#{application}"</code> and writes <code>"#{shared_path}/database.yml"</code> referencing it</li>
 <li>writes an rc.d start/stop/restart script for the application and a crontab entry to run it at server startup</li>
 <li>writes a lighttpd virtual host configuration and restarts lighttpd</li>
-<li><a href="http://www.matthewtodd.org/2006/10/13/htaccess-goodness/">configures apache</a> to proxy requests for <code>"#{application}.#{domain}</code> to lighttpd</li>
+<li><a href=/2006/10/13/htaccess-goodness/">configures apache</a> to proxy requests for <code>"#{application}.#{domain}</code> to lighttpd</li>
 </ul>
 
 [<a href="http://matthewtodd.org/svn/public/capistrano-ext-textdrive/lib/capistrano/ext/textdrive/recipes/setup.rb">code</a>]
