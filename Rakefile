@@ -3,11 +3,12 @@ task :default => :build
 desc 'Build the website.'
 task :build => :clean do
   jekyll
+  puts_and_run('cp', 'website/.htaccess', 'public/')
 end
 
 desc 'Delete the generated website.'
 task :clean do
-  sh 'rm -rf public'
+  puts_and_run('rm', '-rf', 'public')
 end
 
 desc 'Publish the website.'
