@@ -10,6 +10,11 @@ task :clean do
   sh 'rm -rf public'
 end
 
+desc 'Publish the website.'
+task :publish => :build do
+  puts_and_run('rsync', '--recursive', 'public/', 'woodward:web/public')
+end
+
 desc 'Serve the website on localhost:3000.'
 task :serve do
   jekyll '--auto', '--server', '3000'
