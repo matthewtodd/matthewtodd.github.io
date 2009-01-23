@@ -11,7 +11,7 @@ task :clean do
 end
 
 desc 'Serve the website on localhost:3000.'
-task :serve => :clean do
+task :serve do
   jekyll '--auto', '--server', '3000'
 end
 
