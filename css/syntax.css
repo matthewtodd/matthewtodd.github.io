@@ -12,4 +12,7 @@
 .highlight .si { color: #DAEFA3; }
 .highlight .sr { color: #E9C062; }
 .highlight .ss { color: #CF6A4C; }
-.highlight { background-color: #141414; color: #F8F8F8; }
+
+#content .highlight pre {
+  background-color: #141414; color: #F8F8F8;
+}
