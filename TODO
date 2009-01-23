@@ -1,3 +1,7 @@
 * move document root
+* fold into matthewtodd_org repository
+* push matthewtodd_org repository to github?
+* clean up var/www on woodward
+* delete wordpress db on woodward (after preserving comments?)
 * comments. disqus?
 * Some kind of Archive
