@@ -524,3 +524,8 @@ span.caps {
 	padding: 0.5em;
   }
 /* End Various Tags & Classes*/
+
+#comments {
+  background-color: #eee;
+  padding: 1em;
+}
