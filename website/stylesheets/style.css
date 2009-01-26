@@ -528,11 +528,14 @@ span.caps {
 /* Comment formatting */
 #comments {
   background-color: #eee;
-  padding: 1em;
+  border-top: 2px solid #ccc;
+  margin-top: 2em;
+  padding: 0em 1em 1em;
 }
 
 #disqus_thread #dsq-content h3 { font-size: 1em; }
-#dsq-content #dsq-comments .dsq-comment-rate   { display: none; }
-#dsq-content #dsq-comments .dsq-comment        { background-color: #fff; }
 #dsq-content #dsq-comments .dsq-comment-header { background-color: #ddd; }
-#dsq-content #dsq-comments .dsq-comment-footer a:hover { background-color: #000; }
+#dsq-content #dsq-comments .dsq-comment-body   { background-color: #fff; padding: 1em 1em 0em 1em; }
+#dsq-content #dsq-comments .dsq-comment-footer { background-color: #fff; padding: 1em; margin-top: 0 !important; }
+#dsq-content #dsq-comments .dsq-comment-footer a:hover { background-color: #000 !important; }
+

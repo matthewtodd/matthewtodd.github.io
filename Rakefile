@@ -1,7 +1,7 @@
 task :default => :build
 
 desc 'Build the website.'
-task :build => :clean do
+task :build do
   jekyll
   puts_and_run('cp', 'website/.htaccess', 'public/')
 end
