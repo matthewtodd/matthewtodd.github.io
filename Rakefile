@@ -17,8 +17,13 @@ task :publish => :build do
 end
 
 desc 'Serve the website on localhost:3000.'
-task :serve do
+task :reserve do
   jekyll '--auto', '--server', '3000'
+end
+
+desc 'Serve the website on localhost:3000.'
+task :serve do
+  jekyll '--server', '3000'
 end
 
 def jekyll(*args)
