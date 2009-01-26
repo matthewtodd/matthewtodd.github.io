@@ -525,7 +525,15 @@ span.caps {
   }
 /* End Various Tags & Classes*/
 
+/* Comment formatting */
 #comments {
   background-color: #eee;
   padding: 1em;
 }
+
+#disqus_thread #dsq-content h3 { font-size: 1em; }
+#dsq-content #dsq-comments .dsq-comment-rate   { display: none; }
+#dsq-content #dsq-comments .dsq-comment-header { background-color: #ddd; }
+#dsq-content #dsq-comments .dsq-comment-body   { background-color: #fff; }
+#dsq-content #dsq-comments .dsq-comment-footer { background-color: #fff; }
+#dsq-content #dsq-comments .dsq-comment-footer a:hover { background-color: #000; }
