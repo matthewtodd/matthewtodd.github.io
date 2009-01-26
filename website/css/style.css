@@ -534,6 +534,6 @@ span.caps {
 #disqus_thread #dsq-content h3 { font-size: 1em; }
 #dsq-content #dsq-comments .dsq-comment-rate   { display: none; }
 #dsq-content #dsq-comments .dsq-comment-header { background-color: #ddd; }
-#dsq-content #dsq-comments .dsq-comment-body   { background-color: #fff; }
-#dsq-content #dsq-comments .dsq-comment-footer { background-color: #fff; }
+#dsq-content #dsq-comments .dsq-comment-body   { background-color: #fff; padding: 1em; }
+#dsq-content #dsq-comments .dsq-comment-footer { background-color: #fff; margin-top: 0; padding: 1em; }
 #dsq-content #dsq-comments .dsq-comment-footer a:hover { background-color: #000; }
