@@ -2,7 +2,11 @@ function githubCallback(data) {
   var repositories = data.user.repositories;
   var repositoryFragments = new Array(repositories.length);
   for (var i=0; i < repositories.length; i++) {
-    repositoryFragments[i] = "<li><a href=\"" + repositories[i].url + "\">" + repositories[i].name + "</a></li>";
+    if (repositories[i].fork) {
+      repositoryFragments[i] = "";
+    } else {
+      repositoryFragments[i] = '<li><a href="' + repositories[i].url + '">' + repositories[i].name + '</a>' + (repositories[i].watchers > 1 ? ' (' + pluralize('watcher', repositories[i].watchers - 1) + ')' : '') + '</li>';
+    }
   }
   document.getElementById("github_repository_list").innerHTML = repositoryFragments.sort().join("");
 }
@@ -15,6 +19,13 @@ function twitterCallback(tweets) {
   document.getElementById("twitter_update_list").innerHTML = tweetFragments.join("");
 }
 
+function pluralize(word, count) {
+  if (count == 1) {
+    return count + ' ' + word;
+  } else {
+    return count + ' ' + word + 's';
+  }
+}
 function relativeTime(time_value) {
   var values = time_value.split(" ");
   time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
