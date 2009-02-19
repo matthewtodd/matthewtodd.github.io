@@ -1,0 +1,47 @@
+---
+title: Using Authlogic and ActiveResource
+layout: post
+---
+
+Out of the box, Authlogic looks in "four different places":http://github.com/binarylogic/authlogic/blob/7cd869f49a264cb7ece7e72df8ff077c06fdc5d3/lib/authlogic/session/config.rb#L107-120 to identify users:
+
+# A token in the "request parameters":http://github.com/binarylogic/authlogic/blob/7cd869f49a264cb7ece7e72df8ff077c06fdc5d3/lib/authlogic/session/params.rb.
+# A user id in the "session":http://github.com/binarylogic/authlogic/blob/7cd869f49a264cb7ece7e72df8ff077c06fdc5d3/lib/authlogic/session/session.rb.
+# A token in a remember me "cookie":http://github.com/binarylogic/authlogic/blob/7cd869f49a264cb7ece7e72df8ff077c06fdc5d3/lib/authlogic/session/cookies.rb.
+# A username and password in an "HTTP basic authentication":http://github.com/binarylogic/authlogic/blob/7cd869f49a264cb7ece7e72df8ff077c06fdc5d3/lib/authlogic/session/base.rb#L341-352 header.
+
+As far as ActiveResource is concerned, though, I'd like to pass <strong>an API key instead of my username and password</strong> in the HTTP basic authentication header, following the example of the "Highrise API":http://developer.37signals.com/highrise/.
+
+It turns out Authlogic makes this fairly easy:
+
+{% highlight ruby %}
+class UserSession < Authlogic::Session::Base
+  # Ignore request parameters and HTTP basic authentication via username & password
+  find_with :session, :cookie, :api_key
+  
+  def valid_api_key?
+    controller.authenticate_with_http_basic do |api_key, _|
+      self.unauthorized_record = search_for_record("find_by_#{single_access_token_field}", api_key)
+      self.valid?
+    end
+  end
+end
+{% endhighlight %}
+
+So now I can write a Widget Resource class like this:
+
+{% highlight ruby %}
+class Widget < ActiveResource::Base
+  self.site = 'http://localhost:3000/'
+  self.user = 'MY_API_TOKEN'
+end
+{% endhighlight %}
+
+Or poke around with <code>curl</code>:
+
+{% highlight bash %}
+curl --user   'MY_API_TOKEN:X'                \
+     --header 'Content-Type: application/xml' \
+     --data   '<widget></widget>'             \
+     http://localhost:3000/widgets.xml
+{% endhighlight %}
