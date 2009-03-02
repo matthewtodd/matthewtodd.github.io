@@ -6,6 +6,7 @@
 .highlight .nb { color: #7587A6; }
 .highlight .nc { color: #9B703F; }
 .highlight .nf { color: #9B703F; }
+.highlight .nn { color: #9B703F; }
 .highlight .no { color: #9B859D; }
 .highlight .o  { color: #CDA869; }
 .highlight .s1 { color: #8F9D6A; }
@@ -14,6 +15,7 @@
 .highlight .si { color: #DAEFA3; }
 .highlight .sr { color: #E9C062; }
 .highlight .ss { color: #CF6A4C; }
+.highlight .vi { color: #7587A6; }
 
 #content .highlight pre {
   background-color: #141414; color: #F8F8F8;
