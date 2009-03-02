@@ -1,5 +1,5 @@
 ---
-title: Working Title
+title: Default Association Attributes in ActiveRecord
 layout: post
 ---
 
