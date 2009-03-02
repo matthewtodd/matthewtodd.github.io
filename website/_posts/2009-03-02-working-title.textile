@@ -3,49 +3,7 @@ title: Working Title
 layout: post
 ---
 
-I landed on a satisfying ActiveRecord technique the other day, but I may be a little bit crazy. I'd love to hear what you think.
-
-h3. The Setup
-
-(For motivation, you might want to read the two Unsatisfying Solutions below.)
-
-As an Administrator of my fancy new web application, I want to send an Invitation to an early Subscriber. I'd also like to keep track of which Subscribers I've already invited. So it makes sense to say that a Subscriber @has_many@ Invitations, and that an Invitation looks like this:
-
-{% highlight ruby %}
-# Invitation closely tied to Subscriber:
-class Invitation < ActiveRecord::Base
-  belongs_to :subscriber
-  delegate :email, :to => :subscriber
-end
-{% endhighlight %}
-
-Looking down the road, though, I'd also like to allow Users to send Invitations to their friends, and I don't really want to revisit all of my Invitation decisions when I do[1]. So I want to adjust Invitation to look more like this:
-
-{% highlight ruby %}
-# Freeing up Invitation to stand on its own:
-class Invitation < ActiveRecord::Base
-  belongs_to :source, :polymorphic => true
-  validates_email_veracity_of :email
-end
-{% endhighlight %}
-
-h3. The Problem
-
-You'll notice that our freed-up Invitation now has its own email attribute. So, we need to find the right place to set that email attribute when we send an Invitation to a Subscriber.
-
-h4. An Unsatisfying Solution: The View
-
-{% highlight ruby %}
-link_to 'Invite',
-  admin_subscriber_invitations_path(
-    subscriber, 
-    # I'd *really* like to remove this line:
-    :invitation => { :email => subscriber.email }
-  ),
-  :method => :post
-{% endhighlight %}
-
-h4. An Unsatisfying Solution: The Controller
+I cringe a little bit when I see a controller like this:
 
 {% highlight ruby %}
 class Admin::Subscribers::InvitationsController < Admin::ApplicationController
@@ -54,17 +12,25 @@ class Admin::Subscribers::InvitationsController < Admin::ApplicationController
 
   def build_invitation
     @invitation = @subscriber.invitations.build(params[:invitation])
-    # I'd *really* like to remove this line:
-    @invitation.email = @subscriber.email
+    @invitation.email = @subscriber.email # *shudder*
   end
 end
 {% endhighlight %}
 
-h4. A Satisfying Solution: The Model Association
+While it's almost okay, it irks me to have to explicitly set the Invitations's email address in the controller[1] [2].
 
-We want to set the Invitation's email address to that of the Subscriber _precisely_ when we're creating an Invitation _for a Subscriber_. And we always do that through the @has_many@ association--so, as far as all of our other code is concerned, we just want @subscriber.invitations.build@ to do the right thing.
+h3. An Insight
 
-It turns out you can do that. Check it out:
+What I really want is to set the email address _when I make an Invitation for a Subscriber_. There should only be two ways to say that:
+
+{% highlight ruby %}
+@subscriber.invitations.build
+@subscriber.invitations.create
+{% endhighlight %}
+
+h3. A Solution
+
+So, let's place the responsibility for setting the Invitation's email address directly inside the Subscriber's @has_many@ association:
 
 {% highlight ruby %}
 class Subscriber < ActiveRecord::Base
@@ -90,6 +56,27 @@ module DefaultAttributes
 end
 {% endhighlight %}
 
+And then clean up our controller:
+
+{% highlight ruby %}
+class Admin::Subscribers::InvitationsController < Admin::ApplicationController
+  before_filter :load_subscriber
+  before_filter :build_invitation, :only => [:new, :create]
+
+  def build_invitation
+    @invitation = @subscriber.invitations.build(params[:invitation])
+  end
+end
+{% endhighlight %}
+
+h3. Feedback?
+
+I'm feeling pretty happy with this idea, so I'm thinking I'll keep the code around and maybe throw a small gem up on GitHub.
+
+I may have missed another solution though, so I'd love to hear from you--how have you solved this problem? How have you felt about your solution?
+
 h3. Footnotes
 
-fn1. Consider this an experimental pushback on my simplistic understanding of YAGNI: while I don't know all that I'll need then, can I still try to separate concerns well today without getting into too much trouble?
+fn1. Having Invitation hang onto its own email address allows it to be re-used in non-Subscriber contexts--like when a User wants to create an Invitation for a friend.
+
+fn2. Somehow, using a custom method like @Subscriber#build_invitation_with_email@ doesn't feel much better--then I have to remember to use it instead of the default.
