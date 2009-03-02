@@ -34,14 +34,14 @@ So, let's place the responsibility for setting the Invitation's email address di
 
 {% highlight ruby %}
 class Subscriber < ActiveRecord::Base
-  has_many :invitations, :as => :source, :extend => DefaultAttributes do
+  has_many :invitations, :as => :source, :extend => DefaultAssociationAttributes do
     def default_attributes
       { :email => proxy_owner.email }
     end
   end
 end
 
-module DefaultAttributes
+module DefaultAssociationAttributes
   def build_record(attrs, &block)
     super(with_default_attributes(attrs), &block)
   end
@@ -72,6 +72,8 @@ end
 h3. Feedback?
 
 I'm feeling pretty happy with this idea, so I'm thinking I'll keep the code around and maybe throw a small gem up on GitHub.
+
+*UPDATE*: The gem's now in my GitHub account as "default_association_attributes":http://github.com/matthewtodd/default_association_attributes.
 
 I may have missed another solution though, so I'd love to hear from you--how have you solved this problem? How have you felt about your solution?
 
