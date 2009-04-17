@@ -14,6 +14,7 @@ end
 desc 'Publish the website.'
 task :publish => :build do
   sh 'rsync', '--recursive', 'public/', 'woodward:web/public'
+  sh 'curl', 'http://feedburner.google.com/fb/a/pingSubmit?bloglink=http%3A%2F%2Fmatthewtodd.org%2Ffeed.atom'
 end
 
 desc 'Serve the website on localhost:3000.'
