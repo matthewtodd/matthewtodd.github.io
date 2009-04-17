@@ -2,6 +2,8 @@
 title: Preventing Commits with Unadded Files
 layout: post
 ---
+<p class="update"><strong>Update, 17 April 2009:</strong> doh lives <a href="/2008/04/09/doh-021.html">as a gem</a> <a href="http://github.com/matthewtodd/doh">on github</a> now.</p>
+
 Today I added a new file to an in-progress Rails app, watched all the tests pass, and committed. Except I forgot to <code>svn add</code> the new file. <strong>Again.</strong>
 
 Doh.
@@ -25,7 +27,7 @@ Cool, huh?
 <h3>Installation</h3>
 
 {% highlight bash %}
-wget <a href="http://matthewtodd.org/svn/public/doh/bin/doh">http://matthewtodd.org/svn/public/doh/bin/doh</a>
+wget http://matthewtodd.org/svn/public/doh/bin/doh
 {% endhighlight %}
 
 And then create an alias, you know the drill:
@@ -41,7 +43,7 @@ Most of the time <code>doh</code> just does "<code>exec 'svn', *ARGV</code>", so
 To temporarily override <code>doh</code>'s behavior and commit anyway, just prefix the <code>svn</code> with a backslash:
 
 {% highlight bash %}
-\\svn ci -m "don't worry, I know what I'm doing"
+\svn ci -m "don't worry, I know what I'm doing"
 {% endhighlight %}
 
 <h3>Feedback</h3>

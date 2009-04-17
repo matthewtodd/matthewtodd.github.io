@@ -3,17 +3,17 @@ task :default => :build
 desc 'Build the website.'
 task :build do
   jekyll
-  puts_and_run('cp', 'website/.htaccess', 'public/')
+  sh 'cp', 'website/.htaccess', 'public/'
 end
 
 desc 'Delete the generated website.'
 task :clean do
-  puts_and_run('rm', '-rf', 'public')
+  sh 'rm', '-rf', 'public'
 end
 
 desc 'Publish the website.'
 task :publish => :build do
-  puts_and_run('rsync', '--recursive', 'public/', 'woodward:web/public')
+  sh 'rsync', '--recursive', 'public/', 'woodward:web/public'
 end
 
 desc 'Serve the website on localhost:3000.'
@@ -27,10 +27,5 @@ task :serve do
 end
 
 def jekyll(*args)
-  puts_and_run('jekyll', 'website', 'public', '--pygments', *args)
-end
-
-def puts_and_run(*args)
-  puts(args.join(' '))
-  sh(*args)
+  sh 'jekyll', 'website', 'public', '--pygments', *args
 end

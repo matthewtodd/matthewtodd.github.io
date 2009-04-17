@@ -2,9 +2,11 @@
 title: doh 0.2.1
 layout: post
 ---
+<p class="update"><strong>Update, 17 April 2009:</strong> doh lives <a href="http://github.com/matthewtodd/doh">on github</a> now.</p>
+
 Doh stops your version control commit if you've forgotten to add some files.
 
-I last <a href="/2007/08/17/preventing-commits-with-unadded-files/">wrote about Doh</a> in August. You may remember this part:
+I last <a href="/2007/08/17/preventing-commits-with-unadded-files.html">wrote about Doh</a> in August. You may remember this part:
 
 <pre><code>
 DDDDDDDDDDDDD                         hhhhhhh
@@ -29,12 +31,12 @@ Since then, some nice things have happened:
 
 <ul>
   <li>
-	<p>It's a (<a href="http://docs.matthewtodd.org/doh">somewhat documented</a>) gem:</p>
-	<pre><code>$ gem install doh --source http://gems.matthewtodd.org</code></pre>
+	<p>It's a (somewhat documented) gem:</p>
+	<pre><code>$ gem install matthewtodd-doh --source http://gems.github.com</code></pre>
   </li>
 
   <li>
     <p>It has <code>git</code> support!</p>
-    <p>Doh tries to be smart about <code>git commit -a</code>, staying out of your way if you've only modified or deleted tracked files (exactly the things <code>-a</code> notices). See also the <a href="http://git.matthewtodd.org/?p=doh.git;a=blob;f=test/test_git.rb;h=6d15608043bbfa563937ce1bb300e120eca23edc;hb=922f7e84202b7ace05bd2e6d613c1b7a9f1fddae">test case</a>.</p>
+    <p>Doh tries to be smart about <code>git commit -a</code>, staying out of your way if you've only modified or deleted tracked files (exactly the things <code>-a</code> notices). See also the <a href="http://github.com/matthewtodd/doh/blob/11e67ed6c06988223cef85355d26765beb38c1a4/test/test_git.rb">test case</a>.</p>
   </li>
 </ul>
