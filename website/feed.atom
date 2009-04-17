@@ -14,7 +14,7 @@ layout: nil
     <name>Matthew Todd</name>
     <email>matthew.todd@gmail.com</email>
   </author>
-  {% for post in site.posts limit:10 %}
+  {% for post in site.posts limit:5 %}
   <entry>
     <id>tag:matthewtodd.org,2009:{{ post.id }}</id>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
