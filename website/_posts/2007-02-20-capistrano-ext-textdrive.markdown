@@ -13,9 +13,9 @@ set :application, 'reading'
 set :domain,      'matthewtodd.org'
 {% endhighlight %}
 
-This is exceedingly pleasing to me, because these are the only 2 settings I'd ever change from app to app -- precisely what belongs in an application-specific configuration file.
+This is exceedingly pleasing to me, because these are the only 2 settings I'd ever change from app to app---precisely what belongs in an application-specific configuration file.
 
-Herewith, a description of the behavior that <code>require</code> line provides:
+Herewith, a description of the behavior that `require` line provides:
 
 <h4>textdrive_configure_lighttpd</h4>
 Run this once for your account.
@@ -25,28 +25,28 @@ Run this once for your account.
 <li>writes an rc.d start/stop/restart script for lighttpd, and a crontab entry to run it at server startup</li>
 </ul>
 
-[<a href="http://matthewtodd.org/svn/public/capistrano-ext-textdrive/lib/capistrano/ext/textdrive/recipes/lighttpd.rb">code</a>]
+[code](http://matthewtodd.org/svn/public/capistrano-ext-textdrive/lib/capistrano/ext/textdrive/recipes/lighttpd.rb)
 
 <h4>textdrive_after_setup</h4>
-Run this once for your application. <a href="http://matthewtodd.org/svn/public/capistrano-ext-textdrive/lib/capistrano/ext/textdrive/recipes/hooks.rb">An after_setup task</a> has been defined to call this automatically, but if you write your own, you'll clobber it -- see <a href="http://matthewtodd.org/svn/public/capistrano-ext-textdrive/test/multiple_after_tasks_test.rb">this test case</a> -- so be sure to call textdrive_after_setup if you write a custom after_setup task.
+Run this once for your application. <a href="http://matthewtodd.org/svn/public/capistrano-ext-textdrive/lib/capistrano/ext/textdrive/recipes/hooks.rb">An after_setup task</a> has been defined to call this automatically, but if you write your own, you'll clobber it---see <a href="http://matthewtodd.org/svn/public/capistrano-ext-textdrive/test/multiple_after_tasks_test.rb">this test case</a> -- so be sure to call textdrive\_after\_setup if you write a custom after\_setup task.
 
 <ul>
 <li>creates an empty mysql database named <code>"#{user}_#{application}"</code> and writes <code>"#{shared_path}/database.yml"</code> referencing it</li>
 <li>writes an rc.d start/stop/restart script for the application and a crontab entry to run it at server startup</li>
 <li>writes a lighttpd virtual host configuration and restarts lighttpd</li>
-<li><a href=/2006/10/13/htaccess-goodness/">configures apache</a> to proxy requests for <code>"#{application}.#{domain}</code> to lighttpd</li>
+<li><a href="/2006/10/13/htaccess-goodness.html">configures apache</a> to proxy requests for <code>"#{application}.#{domain}</code> to lighttpd</li>
 </ul>
 
-[<a href="http://matthewtodd.org/svn/public/capistrano-ext-textdrive/lib/capistrano/ext/textdrive/recipes/setup.rb">code</a>]
+[code](http://matthewtodd.org/svn/public/capistrano-ext-textdrive/lib/capistrano/ext/textdrive/recipes/setup.rb)
 
 <h4>textdrive_after_update_code</h4>
-Run this every time you deploy. An after_update_code convenience task has been defined just as above, with the same clobberability caveats.
+Run this every time you deploy. An after\_update\_code convenience task has been defined just as above, with the same clobberability caveats.
 
 <ul>
 <li>create symlinks to <code>"#{shared_path}/database.yml"</code> and <code>"#{shared_path}/sockets"</code> from the appropriate places under <code>"#{release_path}"</code></li>
 </ul>
 
-[<a href="http://matthewtodd.org/svn/public/capistrano-ext-textdrive/lib/capistrano/ext/textdrive/recipes/deploy.rb">code</a>]
+[code](http://matthewtodd.org/svn/public/capistrano-ext-textdrive/lib/capistrano/ext/textdrive/recipes/deploy.rb)
 
 <h3>If you'd like to try it out</h3>
 

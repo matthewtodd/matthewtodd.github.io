@@ -14,7 +14,7 @@ Think of it as a poor-man's <a href="http://www.zenspider.com/ZSS/Products/ZenTe
 
 <h3>Installation and Usage</h3>
 {% highlight bash %}
-svn co <a href="http://matthewtodd.org/svn/public/rake-stakeout">http://matthewtodd.org/svn/public/rake-stakeout</a>
+svn co http://matthewtodd.org/svn/public/rake-stakeout
 cd rake-stakeout
 rake gem
 sudo gem install pkg/*.gem

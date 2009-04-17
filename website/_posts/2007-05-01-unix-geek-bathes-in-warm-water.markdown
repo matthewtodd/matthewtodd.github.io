@@ -14,10 +14,7 @@ The <tt><a href="http://en.wikipedia.org/wiki/Crontab">crontab</a></tt> file is 
 
 For what it's worth, here's mine:
 
-{% highlight bash%}
-matthew-todds-computer:~ mtodd$ crontab -l
-MAILTO=''
-
+{% highlight bash %}
 15 10,14 * * 1-5  /usr/local/bin/remind 'Take a minute to pray for Valerie and our marriage.'
 0  16    * * 1-5  /usr/local/bin/remind 'Open the gate for Valerie if she honks.'
 30 16    * * 1-5  /usr/local/bin/remind 'Now would be a great time to turn on the water heater.'
@@ -30,13 +27,10 @@ MAILTO=''
 Here's the <tt>remind</tt> script, just a simple wrapper around <tt><a href="http://www.growl.info/documentation/growlnotify.php">growlnotify</a></tt>:
 
 {% highlight bash %}
-matthew-todds-computer:~ mtodd$ cat /usr/local/bin/remind
 #!/bin/sh
-
-/opt/local/bin/growlnotify     \\
-  --appIcon iCal               \\
-  --message "$*"               \\
-  --sticky                     \\
+/opt/local/bin/growlnotify     \
+  --appIcon iCal               \
+  --message "$*"               \
+  --sticky                     \
   --title 'Just a reminder'
-
 {% endhighlight %}

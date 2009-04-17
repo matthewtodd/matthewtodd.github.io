@@ -6,7 +6,7 @@ layout: post
 
 <p>On your first pass, you'll probably do what I did: gank and modify <a href="http://github.com/jamis/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/recipes/deploy.rb"><code>capistrano/recipes/deploy.rb</code></a>.</p>
 
-<p>This works great, but you'll find it's a little tricky to use your new recipes from a <code>Capfile</code>. It turns out you can't just "<code>require mygem</code>" and "<code>load 'mygem/recipes/deploy'</code>" because Capistrano doesn't <code>load</code> from ruby's <code>$LOAD_PATH</code>---it keeps its own <a href="http://github.com/jamis/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/configuration/loading.rb#L57">minimally-initialized</a> <code>load_paths</code> setting instead.</p>
+<p>This works great, but you'll find it's a little tricky to use your new recipes from a <code>Capfile</code>. It turns out you can't just "<code>require mygem</code>" and "<code>load 'mygem/recipes/deploy'</code>" because Capistrano doesn't <code>load</code> from ruby's <code>$LOAD_PATH</code>&mdash;it keeps its own <a href="http://github.com/jamis/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/configuration/loading.rb#L57">minimally-initialized</a> <code>load_paths</code> setting instead.</p>
 
 <p>So, you have to either modify the <code>load_paths</code> or use an absolute path, like this:</p>
 
@@ -47,8 +47,8 @@ load    'config/deploy'
 <p>So far, we've written:</p>
 
 <ol>
-  <li><a href="/2008/04/21/rails-tip-1-reloadable-custom-formbuilder/">Reloadable custom FormBuilder</a></li>
-  <li><a href="/2008/04/22/rails-tip-2-faking-data-in-tests/">Faking DATA in tests</a></li>
-  <li><a href="/2008/04/23/rails-tip-3-filter-blobs-from-activerecord-logging/">Filter BLOBs from ActiveRecord logging</a></li>
+  <li><a href="/2008/04/21/rails-tip-1-reloadable-custom-formbuilder.html">Reloadable custom FormBuilder</a></li>
+  <li><a href="/2008/04/22/rails-tip-2-faking-data-in-tests.html">Faking DATA in tests</a></li>
+  <li><a href="/2008/04/23/rails-tip-3-filter-blobs-from-activerecord-logging.html">Filter BLOBs from ActiveRecord logging</a></li>
   <li>Writing Capistrano recipes to be loaded from gems</li>
 </ol>
