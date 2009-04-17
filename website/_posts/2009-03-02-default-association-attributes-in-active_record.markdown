@@ -17,9 +17,9 @@ class Admin::Subscribers::InvitationsController < Admin::ApplicationController
 end
 {% endhighlight %}
 
-While it's almost okay, it irks me to have to explicitly set the Invitations's email address in the controller[1] [2].
+While it's almost okay, it irks me to have to explicitly set the Invitations's email address in the controller[^1][^2].
 
-h3. An Insight
+### An Insight
 
 What I really want is to set the email address _when I make an Invitation for a Subscriber_. There should only be two ways to say that:
 
@@ -28,9 +28,9 @@ What I really want is to set the email address _when I make an Invitation for a 
 @subscriber.invitations.create
 {% endhighlight %}
 
-h3. A Solution
+### A Solution
 
-So, let's place the responsibility for setting the Invitation's email address directly inside the Subscriber's @has_many@ association:
+So, let's place the responsibility for setting the Invitation's email address directly inside the Subscriber's `has_many` association:
 
 {% highlight ruby %}
 class Subscriber < ActiveRecord::Base
@@ -69,16 +69,14 @@ class Admin::Subscribers::InvitationsController < Admin::ApplicationController
 end
 {% endhighlight %}
 
-h3. Feedback?
+### Feedback?
 
 I'm feeling pretty happy with this idea, so I'm thinking I'll keep the code around and maybe throw a small gem up on GitHub.
 
-*UPDATE*: The gem's now in my GitHub account as "default_association_attributes":http://github.com/matthewtodd/default_association_attributes.
+**UPDATE**: The gem's now in my GitHub account as [default\_association\_attributes](http://github.com/matthewtodd/default_association_attributes).
 
-I may have missed another solution though, so I'd love to hear from you--how have you solved this problem? How have you felt about your solution?
+I may have missed another solution though, so I'd love to hear from you---how have you solved this problem? How have you felt about your solution?
 
-h3. Footnotes
+[^1]: Having Invitation hang onto its own email address allows it to be re-used in non-Subscriber contexts---like when a User wants to create an Invitation for a friend.
 
-fn1. Having Invitation hang onto its own email address allows it to be re-used in non-Subscriber contexts--like when a User wants to create an Invitation for a friend.
-
-fn2. Somehow, using a custom method like @Subscriber#build_invitation_with_email@ doesn't feel much better--then I have to remember to use it instead of the default.
+[^2]: Somehow, using a custom method like `Subscriber#build_invitation_with_email` doesn't feel much better---then I have to remember to use it instead of the default.
