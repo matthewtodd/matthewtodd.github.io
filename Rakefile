@@ -18,14 +18,14 @@ end
 
 desc 'Serve the website on localhost:3000.'
 task :reserve do
-  jekyll '--auto', '--server', '3000'
+  jekyll '--auto', '--server'
 end
 
 desc 'Serve the website on localhost:3000.'
 task :serve do
-  jekyll '--server', '3000'
+  jekyll '--server'
 end
 
 def jekyll(*args)
-  sh 'jekyll', 'website', 'public', '--pygments', *args
+  Dir.chdir('website') { sh 'jekyll', *args }
 end
