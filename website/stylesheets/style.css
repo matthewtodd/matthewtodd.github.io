@@ -13,7 +13,7 @@ Author URI: http://www.matthewtodd.org/
 	(aka Jeffrey Allan Hardy), whose blog you will find at
 	http://quotedprintable.com/.  The original Typo version of Scribbish can
 	be found at http://quotedprintable.com/pages/scribbish.
-	
+
   The theme was ported to WordPress by Kenny Pitt, whose version can be
   found at http://pittcrew.net/geekblog/scribbishwp
 
@@ -141,29 +141,29 @@ body {
 
 #content h1 {
 	font-size: 24px;
-	margin: 0 0 0.3em;	
+	margin: 0 0 0.3em;
 }
 
 #content h2 {
 	font-size: 22px;
-	margin: 0 0 0.3em;	
+	margin: 0 0 0.3em;
 }
 
 #content h3 {
 	font-size: 20px;
-	margin: 1.2em 0 0.3em;	
+	margin: 1.2em 0 0.3em;
 }
 
 #content h4 {
 	font-size: 18px;
-	margin: 1.2em 0 0.3em;	
+	margin: 1.2em 0 0.3em;
 	border-bottom: 1px dotted #bbb;
 }
 
 #content h5 {
 	font-size: 18px;
 	background: #ddd;
-	margin: 1.2em 0 0.3em;	
+	margin: 1.2em 0 0.3em;
 	border-bottom: 1px dotted #aaa;
 }
 
@@ -472,13 +472,13 @@ p img {
 	thought?!) align the image to the right. And using 'class="centered',
 	will of course center the image. This is much better than using
 	align="center", being much more futureproof (and valid) */
-	
+
 img.centered {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	}
-	
+
 img.alignright {
 	padding: 4px;
 	margin: 0 0 2px 7px;
@@ -494,7 +494,7 @@ img.alignleft {
 .alignright {
 	float: right;
 	}
-	
+
 .alignleft {
 	float: left
 	}
