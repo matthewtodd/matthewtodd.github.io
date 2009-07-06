@@ -3,7 +3,7 @@ title: Using Authlogic and ActiveResource
 layout: post
 ---
 
-<p class="update"><strong>Update, 6 July 2009:</strong> If you're using Authlogic 2, Joe Scharf (<a href="http://matthewtodd.org/2009/02/19/using-authlogic-and-active_resource.html#comment-12162178">in the comments</a>) has bundled up an <a href="http://github.com/quantipay/authlogic_haapi">HTTP-basic-authentication-via-API-key add-on</a>. Well done, sir!</p>
+<p class="update"><strong>Update, 6 July 2009:</strong> This code is outdated, designed around Authlogic 1. Thankfully, though, Joe Scharf (<a href="http://matthewtodd.org/2009/02/19/using-authlogic-and-active_resource.html#comment-12162178">in the comments</a>) has bundled up an <a href="http://github.com/quantipay/authlogic_haapi">HTTP-basic-authentication-via-API-key add-on</a> for Authlogic 2. Well done, sir!</p>
 
 Out of the box, Authlogic identifies the current user by looking for [four different values](http://github.com/binarylogic/authlogic/blob/7cd869f49a264cb7ece7e72df8ff077c06fdc5d3/lib/authlogic/session/config.rb#L107-120):
 
