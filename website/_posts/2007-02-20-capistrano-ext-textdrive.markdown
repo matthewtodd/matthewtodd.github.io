@@ -17,7 +17,7 @@ This is exceedingly pleasing to me, because these are the only 2 settings I'd ev
 
 Herewith, a description of the behavior that `require` line provides:
 
-<h4>textdrive_configure_lighttpd</h4>
+<h3>textdrive_configure_lighttpd</h3>
 Run this once for your account.
 
 <ul>
@@ -27,7 +27,7 @@ Run this once for your account.
 
 [code](http://matthewtodd.org/svn/public/capistrano-ext-textdrive/lib/capistrano/ext/textdrive/recipes/lighttpd.rb)
 
-<h4>textdrive_after_setup</h4>
+<h3>textdrive_after_setup</h3>
 Run this once for your application. <a href="http://matthewtodd.org/svn/public/capistrano-ext-textdrive/lib/capistrano/ext/textdrive/recipes/hooks.rb">An after_setup task</a> has been defined to call this automatically, but if you write your own, you'll clobber it---see <a href="http://matthewtodd.org/svn/public/capistrano-ext-textdrive/test/multiple_after_tasks_test.rb">this test case</a> -- so be sure to call textdrive\_after\_setup if you write a custom after\_setup task.
 
 <ul>
@@ -39,7 +39,7 @@ Run this once for your application. <a href="http://matthewtodd.org/svn/public/c
 
 [code](http://matthewtodd.org/svn/public/capistrano-ext-textdrive/lib/capistrano/ext/textdrive/recipes/setup.rb)
 
-<h4>textdrive_after_update_code</h4>
+<h3>textdrive_after_update_code</h3>
 Run this every time you deploy. An after\_update\_code convenience task has been defined just as above, with the same clobberability caveats.
 
 <ul>
@@ -48,7 +48,7 @@ Run this every time you deploy. An after\_update\_code convenience task has been
 
 [code](http://matthewtodd.org/svn/public/capistrano-ext-textdrive/lib/capistrano/ext/textdrive/recipes/deploy.rb)
 
-<h3>If you'd like to try it out</h3>
+<h2>If you'd like to try it out</h2>
 
 This code's packaged as a gem, but I haven't released it anywhere yet. So:
 
@@ -72,7 +72,7 @@ set :repository,    YOUR_REPOSITORY_PATH
 
 Do be sure to read through the gem code first to understand what it's doing -- I expect things will generally work fine, but it would be a shame to run into trouble with it.
 
-<h4>A few notes</h4>
+<h3>A few notes</h3>
 One last unautomated bit is that you'll need to set <a href="http://httpd.apache.org/docs/2.2/mod/mod_proxy.html#proxypreservehost"><code>ProxyPreserveHost On</code></a> for each Apache virtual host into which you're deploying rails apps this way. (See steps 10-12 in <a href="http://help.textdrive.com/index.php?pg=kb.page&id=255">this bit of TextDrive documentation</a>.)
 
 Most of this approach comes from <a href="http://help.textdrive.com/index.php?pg=kb.chapter&id=71">Installing a Rails Application at TextDrive</a>, in the TextDrive knowledge base.

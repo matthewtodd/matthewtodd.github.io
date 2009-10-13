@@ -12,7 +12,7 @@ Except I was a little troubled by the packaging, so I threw together a <a href="
 
 Think of it as a poor-man's <a href="http://www.zenspider.com/ZSS/Products/ZenTest/"><code>autotest</code></a>, without being <a href="http://zentest.rubyforge.org/ZenTest/classes/Autotest.html">tied to testing</a>.
 
-<h3>Installation and Usage</h3>
+<h2>Installation and Usage</h2>
 {% highlight bash %}
 svn co http://matthewtodd.org/svn/public/rake-stakeout
 cd rake-stakeout

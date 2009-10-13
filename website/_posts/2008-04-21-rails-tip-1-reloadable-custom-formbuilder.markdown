@@ -30,6 +30,6 @@ In our version, we've tricked <code>const_missing</code> into running on each re
 
 Sweet.
 
-<h3>5 Rails tips</h3>
+<h2>5 Rails tips</h2>
 
 Each day this week, <a href="http://youtube.com/watch?v=J35CuC3ywnc">Joachim</a> and I will post something we've learned in our time programming together. It's fun to do, and we might just <a href="http://railscasts.com/contest">win something</a> as well.

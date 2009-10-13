@@ -8,7 +8,7 @@ Today I added a new file to an in-progress Rails app, watched all the tests pass
 
 Doh.
 
-<h3>Never Again</h3>
+<h2>Never Again</h2>
 
 Subversion should <em>prevent me from checking in</em> if I've got unadded files in a project, right?
 
@@ -16,7 +16,7 @@ But looking through the <a href="http://svnbook.red-bean.com">Subversion book</a
 
 So, I've written a short Ruby script to help.
 
-<h3>Introducing Doh</h3>
+<h2>Introducing Doh</h2>
 
 Whenever you <code>svn ci</code> with unadded files lying around, <code>doh</code> stops your commit:
 
@@ -24,7 +24,7 @@ Whenever you <code>svn ci</code> with unadded files lying around, <code>doh</cod
 
 Cool, huh?
 
-<h3>Installation</h3>
+<h2>Installation</h2>
 
 {% highlight bash %}
 wget http://matthewtodd.org/svn/public/doh/bin/doh
@@ -36,7 +36,7 @@ And then create an alias, you know the drill:
 alias svn='/full/path/to/doh'
 {% endhighlight %}
 
-<h3>Usage</h3>
+<h2>Usage</h2>
 
 Most of the time <code>doh</code> just does "<code>exec 'svn', *ARGV</code>", so it's safe as your full-time <code>svn</code> wrapper. It only kicks in if "<code>ci</code>" is one of the command-line arguments, and only then if there are unadded files in the current directory.
 
@@ -46,7 +46,7 @@ To temporarily override <code>doh</code>'s behavior and commit anyway, just pref
 \svn ci -m "don't worry, I know what I'm doing"
 {% endhighlight %}
 
-<h3>Feedback</h3>
+<h2>Feedback</h2>
 
 I'd love to hear if you decide to give <code>doh</code> a try---or if there's some built-in way to achieve the same goal in Subversion! I'll be glad to turn this into a gem if there's any demand for it.
 

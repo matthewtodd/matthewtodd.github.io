@@ -12,7 +12,7 @@ Valerie's parents were here visiting for a few weeks, during which time her mom 
 
 <p class="update"><strong>Update:</strong> My bad. <a href="http://www.mindspring.com/~alanh/">Alan Hensel</a> points out that word length does matter in <a href="http://en.wikipedia.org/wiki/Boggle">Boggle</a>. What's additionally true about Perquackey is that it <em>limits</em> you to spelling just 5 words of a given length.</p>
 
-<h3>Smack</h3>
+<h2>Smack</h2>
 
 Which, apparently, gives you more time for trash-talking. Weeks before their arrival, I started getting gems like this in my inbox:
 
@@ -54,11 +54,11 @@ Ouch.
 
 The alert reader will note the first letters of each line spell out "I am the perquackmaster, yo."
 
-<h3>Style</h3>
+<h2>Style</h2>
 
 Sadly, though, age and treachery won out over youth and intelligence. But I held my own spelling <em>interesting</em> words. Between the two of us, "style points" were awarded for archaic, aplomb, axioms, eclipse, imbues, poseur, pundit, urethra.
 
-<h3><tt>perquackey.matthewtodd.org</tt></h3>
+<h2><tt>perquackey.matthewtodd.org</tt></h2>
 
 Finally, when the time runs out, you always wonder what you missed, so I've written a <a href="http://perquackey.matthewtodd.org/">Perquackey word looker-upper</a>.
 

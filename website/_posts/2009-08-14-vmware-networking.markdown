@@ -7,7 +7,7 @@ layout: post
 
 <p>Unless you drop down to the shell:</p>
 
-<h3>Changing the Default Network Addresses</h3>
+<h2>Changing the Default Network Addresses</h2>
 
 {% highlight bash %}
 cd /Library/Application Support/VMware Fusion
@@ -17,6 +17,6 @@ sudo ./vmware-config-net.pl  # re-generate files in vmnet1/ and vmnet8/
 sudo ./boot.sh --start       # bring the vmnet interfaces back up
 {% endhighlight %}
 
-<h3>Spelunking</h3>
+<h2>Spelunking</h2>
 
 <p>If you'd like to read more, start with <tt>/Library/LaunchDaemons/com.vmware.launchd.vmware.plist</tt>, which has <tt>/Library/Application Support/VMware Fusion/boot.sh</tt> run when your system comes up.</p>

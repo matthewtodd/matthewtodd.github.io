@@ -24,7 +24,7 @@ end
 
 <p>Also, looking at <a href="http://github.com/rails/rails/tree/c8da518bbfedc2a06b1d96912ddae00e57f21748/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb#L120"><code>AbstractAdapter#log_info</code></a> just now, we notice that could have written our own <code>Logger</code> and saved the monkeypatch. Maybe we'll look into doing that some day.</p>
 
-<h3>5 Rails tips</h3>
+<h2>5 Rails tips</h2>
 
 <p>Each day this week, <a href="http://youtube.com/watch?v=J35CuC3ywnc">Joachim</a> and I will post something we've learned in our time programming together. It's fun to do, and we might just <a href="http://railscasts.com/contest">win something</a> as well.</p>
 

@@ -8,7 +8,7 @@ I've felt for some time that it would help me to read through the Bible -- but I
 
 At times like this, one only need ask oneself, "Well, am I a programmer, or <em>am I a programmer?</em>" (Hollah.)
 
-<h3>The Result</h3>
+<h2>The Result</h2>
 
 I've set up a new web site that automatically blogs the Bible, piece at a time, in a way that news readers can understand:
 

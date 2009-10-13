@@ -8,7 +8,7 @@ Normally, you'd hope to just set an <code>HTTP_PROXY</code> environment variable
 
 Here's what I did:
 
-<h3>Set Up <tt>ssh</tt> Environment</h3>
+<h2>Set Up <tt>ssh</tt> Environment</h2>
 
 Create <code>~/.ssh/environment</code> on the server, <code>chmod 600</code>, with the line
 
@@ -24,7 +24,7 @@ PermitUserEnvironment yes
 
 This'll take care of <code>apt-get</code> and <code>gem</code>'s proxy needs, but then you'll still need to:
 
-<h3>Configure <tt>wget</tt></h3>
+<h2>Configure <tt>wget</tt></h2>
 
 Modify <code>/etc/wgetrc</code> so that it contains
 
@@ -32,6 +32,6 @@ Modify <code>/etc/wgetrc</code> so that it contains
 http_proxy = http://proxy:8080
 {% endhighlight %}
 
-<h3>Done!</h3>
+<h2>Done!</h2>
 
 It seems like everything is easy, once you find the right 3 lines of code...

@@ -8,7 +8,7 @@ So I don't burden my poor brain trying to remember stuff, I've rigged up some <t
 
 Arguably, I could have just put a bunch of event reminders in iCal, but it's nice to avoid cluttering the calendar and I like the way these Growl notifications look. :)
 
-<h3><tt>crontab</tt></h3>
+<h2><tt>crontab</tt></h2>
 
 The <tt><a href="http://en.wikipedia.org/wiki/Crontab">crontab</a></tt> file is an old-school unixy configuration file on the Mac (and many other platforms) that expresses a schedule of recurring tasks.
 
@@ -22,7 +22,7 @@ For what it's worth, here's mine:
 
 (The schedule information is a little cryptic---the last line makes sure I turn on the water heater every weekday (1-5) at 4:30pm.)
 
-<h3><tt>remind</tt></h3>
+<h2><tt>remind</tt></h2>
 
 Here's the <tt>remind</tt> script, just a simple wrapper around <tt><a href="http://www.growl.info/documentation/growlnotify.php">growlnotify</a></tt>:
 

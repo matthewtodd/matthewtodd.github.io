@@ -18,7 +18,7 @@ load 'config/deploy'
 
 <p>This is what I did for a while, but something didn't seem right. My <code>Capfile</code> didn't look as nice as I expected, and I wasn't using <a href="http://github.com/jamis/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/configuration/loading.rb#L104"><code>require</code></a>, whose comments clearly mention third-party recipes.</p>
 
-<h3>Take two</h3>
+<h2>Take two</h2>
 
 <p>Staring at <code>capistrano/configuration/loading.rb</code> until it made sense, I saw <a href="http://github.com/jamis/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/configuration/loading.rb#L11"><code>instance</code></a>, which triggered some vague distant memory that somehow turned into a productive thought:</p>
 
@@ -40,7 +40,7 @@ load    'config/deploy'
 
 <p>Nice. I'm still a little bummed by the <code>require</code> / <code>load</code> imbalance, but on the whole this feels more like things were supposed to be.</p>
 
-<h3>5 Rails tips</h3>
+<h2>5 Rails tips</h2>
 
 <p>Each day this week, <a href="http://youtube.com/watch?v=J35CuC3ywnc">Joachim</a> and I will post something we've learned in our time programming together. It's fun to do, and we might just <a href="http://railscasts.com/contest">win something</a> as well.</p>
 
