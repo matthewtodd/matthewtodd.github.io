@@ -50,25 +50,6 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-h1 a {
-  text-decoration: none;
-}
-
-h2 {
-  border-bottom: 1px solid #555;
-  margin-bottom: 0.5em;
-  position: relative;
-}
-
-h2 .date {
-  color: #555;
-  font-size: 0.8em;
-  position: absolute;
-  text-align: right;
-  right: 33.5em;
-  width: 8em;
-}
-
 h3 {
   font-style: italic;
   margin-bottom: 0.5em;
@@ -103,6 +84,10 @@ blockquote {
 p {
   clear: both;
   margin-bottom: 1em;
+}
+
+p.about, p.date {
+  color: #555;
 }
 
 p.update {
