@@ -95,6 +95,11 @@ img.inset {
   margin: 0 1em 1em 0;
 }
 
+blockquote {
+  color: #555;
+  margin: 0 1em;
+}
+
 p {
   clear: both;
   margin-bottom: 1em;
@@ -103,6 +108,12 @@ p {
 p.update {
   border: 3px double #555;
   padding: 0.5em;
+}
+
+ol {
+  list-style: decimal;
+  margin-bottom: 1em;
+  padding-left: 2em;
 }
 
 ul {
