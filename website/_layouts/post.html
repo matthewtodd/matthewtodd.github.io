@@ -1,49 +1,24 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    {% include head.html %}
-    <title>Matthew Todd &raquo; {{ page.title }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/stylesheets/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" media="screen" />
+    <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://feeds2.feedburner.com/matthewtodd_org" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>{{ page.title }} &laquo; Matthew Todd</title>
   </head>
 
   <body>
-    <div id="container">
-      <div id="header">
-      	<h1><a href="/">Matthew Todd</a></h1>
-      	<h2>Software development and life in Moshi, Tanzania</h2>
-      </div>
-
-      <div id="page">
-        <div id="content">
-          <div class="atomentry">
-            <h2 class="title">
-              {{ page.title }}
-            </h2>
-
-        		<p class="author">
-        		  Posted on <abbr class="published"><span class="posted_date">{{ page.date | date: "%B %e, %Y"}}</span></abbr>
-            </p>
-
-            <div class="content">
-              {{ content }}
-            </div>
-
-            <div id="comments">
-              <div id="disqus_thread"></div>
-              <noscript><p><a href="http://matthewtodd.disqus.com/?url=ref">View comments on Disqus.</a></p></noscript>
-            </div>
-          </div>
-        </div>
-
-        <div id="sidebar">
-          {% include sidebar.html %}
-        </div>
-      </div>
-
-      <div id="footer">
-      	{% include footer.html %}
-        <script type="text/javascript" src="http://disqus.com/forums/matthewtodd/embed.js"></script>
-      </div>
-    </div>
+    <h1><a href="/about.html">Matthew Todd</a></h1>
+    <h2>
+      <span class="date">{{ page.date | date: "%Y %B %e"}}</span>
+      {{ page.title }}
+    </h2>
+    {{ content }}
   </body>
 </html>

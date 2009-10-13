@@ -3,25 +3,11 @@ layout: home
 title: Matthew Todd
 ---
 
-{% for post in site.posts limit:3 %}
-  <div class="atomentry">
-    <h2 class="title">
-      <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
-    </h2>
-
-		<p class="author">
-		  Posted on <abbr class="published"><span class="posted_date">{{ post.date | date: "%B %e, %Y"}}</span></abbr>
-    </p>
-
-    <div class="content">
-      {{ post.content }}
-    </div>
-
-    <ul class="meta">
-      <li>Meta
-        <a href="{{ post.url }}#disqus_thread">Comments</a>
-        <a href="{{ post.url }}" rel="bookmark">Permalink</a>
-      </li>
-    </ul>
-  </div>
+<ul class="posts">
+{% for post in site.posts %}
+  <li>
+    <span class="date">{{ post.date | date: "%Y %B %e"}}</span>
+    <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+  </li>
 {% endfor %}
+</ul>

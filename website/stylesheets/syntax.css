@@ -17,6 +17,14 @@
 .highlight .ss { color: #CF6A4C; }
 .highlight .vi { color: #7587A6; }
 
-#content .highlight pre {
+.highlight {
   background-color: #141414; color: #F8F8F8;
+}
+
+.highlight pre {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+  overflow: scroll;
+  padding: 1em;
 }
