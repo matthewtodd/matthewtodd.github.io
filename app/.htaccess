@@ -3,3 +3,8 @@ RewriteCond %{HTTP_USER_AGENT} !FeedBurner
 RewriteRule ^feed\.atom$ http://feeds2.feedburner.com/matthewtodd_org [R,L]
 RewriteCond %{HTTP_HOST} !^matthewtodd.org$
 RewriteRule ^(.*)$ http://matthewtodd.org/$1 [R=301,L]
+
+ExpiresActive On
+<FilesMatch "\.(ico|gif|jpe?g|png|css|html)$">
+  ExpiresDefault "access plus 30 minutes"
+</FilesMatch>
