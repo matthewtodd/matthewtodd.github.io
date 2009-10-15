@@ -19,7 +19,7 @@ end
 
 While it's almost okay, it irks me to have to explicitly set the Invitations's email address in the controller[^1][^2].
 
-### An Insight
+## An Insight
 
 What I really want is to set the email address _when I make an Invitation for a Subscriber_. There should only be two ways to say that:
 
@@ -28,7 +28,7 @@ What I really want is to set the email address _when I make an Invitation for a 
 @subscriber.invitations.create
 {% endhighlight %}
 
-### A Solution
+## A Solution
 
 So, let's place the responsibility for setting the Invitation's email address directly inside the Subscriber's `has_many` association:
 
@@ -69,7 +69,7 @@ class Admin::Subscribers::InvitationsController < Admin::ApplicationController
 end
 {% endhighlight %}
 
-### Feedback?
+## Feedback?
 
 I'm feeling pretty happy with this idea, so I'm thinking I'll keep the code around and maybe throw a small gem up on GitHub.
 
