@@ -3,7 +3,6 @@ task :default => :build
 desc 'Build the website.'
 task :build do
   jekyll
-  sh 'cp', 'website/.htaccess', 'public/'
 end
 
 desc 'Delete the generated website.'
@@ -28,5 +27,5 @@ task :serve do
 end
 
 def jekyll(*args)
-  Dir.chdir('website') { sh 'jekyll', *args }
+  sh 'bin/jekyll', 'app', 'public', *args
 end
