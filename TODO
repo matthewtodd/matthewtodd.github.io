@@ -1,5 +1,6 @@
 * Deep-link to Valerie's page at amanikids.org.
-* (When the internet's working) dig into the styling for disqus comments.
+
+* figure out a more permanent way to patch classifier's lsi.rb, a la http://rubyforge.org/tracker/index.php?func=detail&aid=17839&group_id=655&atid=2587
 
 * fold into matthewtodd_org repository
 * push matthewtodd_org repository to github?
