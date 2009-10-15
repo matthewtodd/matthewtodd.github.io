@@ -5,8 +5,8 @@ layout: nil
 <feed xml:lang="en-US" xml:base="http://matthewtodd.org/feed.atom" xmlns="http://www.w3.org/2005/Atom">
   <id>tag:matthewtodd.org,2009:/feed.atom</id>
   <link rel="alternate" type="text/html" href="." />
-  <link rel="self" type="application/atom+xml" href="/feed.atom" />
-  <logo>/images/matthewtodd_small.jpg</logo>
+  <link rel="self" type="application/atom+xml" href="http://matthewtodd.org/feed.atom" />
+  <logo>http://matthewtodd.org/images/matthewtodd_small.jpg</logo>
   <title>Matthew Todd</title>
   <subtitle>Software development and life in Moshi, Tanzania</subtitle>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
@@ -18,7 +18,7 @@ layout: nil
   <entry>
     <id>tag:matthewtodd.org,2009:{{ post.id }}</id>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <link rel="alternate" type="text/html" href="{{ post.url }}" />
+    <link rel="alternate" type="text/html" href="http://matthewtodd.org{{ post.url }}" />
     <title>{{ post.title }}</title>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
