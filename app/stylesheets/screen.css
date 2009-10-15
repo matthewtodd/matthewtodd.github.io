@@ -85,7 +85,9 @@ a {
 }
 
 a:hover {
-  background-color: #f90;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
 }
 
 img {
@@ -113,10 +115,6 @@ body#post p.update {
 body#page img.inset {
   float: left;
   margin: 0 1em 1em 0;
-}
-
-body#page ul.links {
-  clear: both;
 }
 
 body#page ul.posts {
