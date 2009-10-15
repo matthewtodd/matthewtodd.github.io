@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+root = File.expand_path(File.join(File.dirname(__FILE__), '..'))
+exec "cd #{root}; jekyll app public --auto --server"
