@@ -8,7 +8,7 @@ layout: post
 <p>Unless you drop down to the shell:</p>
 
 {% highlight bash %}
-cd /Library/Application Support/VMware Fusion
+cd /Library/Application\ Support/VMware\ Fusion
 sudo ./boot.sh --stop        # bring down the vmnet interfaces
 sudo vi locations            # <-- THE MAGIC HAPPENS HERE
 sudo ./vmware-config-net.pl  # re-generate files in vmnet1/ and vmnet8/
