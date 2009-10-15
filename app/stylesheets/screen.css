@@ -36,7 +36,7 @@ table {
 }
 
 
-/* LAYOUT */
+/* LAYOUT - General */
 body {
   color: #111;
   font-size: 1.5em;
@@ -47,12 +47,37 @@ body {
 
 h1 {
   font-size: 2em;
+  line-height: 1em;
   margin-bottom: 0.5em;
 }
 
 h2 {
   font-size: 1.25em;
+  line-height: 1em;
   margin: 0.5em 0;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+pre {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+ol, ul {
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: circle;
 }
 
 a {
@@ -67,58 +92,45 @@ img {
   border: 1px solid #000;
 }
 
-img.inset {
+/* LAYOUT - Post */
+body#post p.about, body#post p.date {
+  color: #888;
+  font-size: 0.8em;
+  margin-bottom: 1.2em;
+}
+
+body#post blockquote {
+  color: #888;
+  margin: 0 1em;
+}
+
+body#post p.update {
+  border: 3px double #888;
+  padding: 0.5em;
+}
+
+/* LAYOUT - Page */
+body#page img.inset {
   float: left;
   margin: 0 1em 1em 0;
 }
 
-blockquote {
-  color: #555;
-  margin: 0 1em;
-}
-
-p {
-  clear: both;
-  margin-bottom: 1em;
-}
-
-p.about, p.date {
-  color: #555;
-}
-
-p.update {
-  border: 3px double #555;
-  padding: 0.5em;
-}
-
-ol {
-  list-style: decimal;
-  margin-bottom: 1em;
-  padding-left: 2em;
-}
-
-ul {
-  list-style: circle;
-  margin-bottom: 1em;
-  padding-left: 2em;
-}
-
-ul.links {
+body#page ul.links {
   clear: both;
 }
 
-ul.posts {
+body#page ul.posts {
   list-style: none;
   padding-left: 0;
 }
 
-ul.posts li {
+body#page ul.posts li {
   position: relative;
   left: 7.2em;
 }
 
-ul.posts li .date {
-  color: #555;
+body#page ul.posts li .date {
+  color: #888;
   font-size: 0.8em;
   position: absolute;
   text-align: right;
@@ -148,13 +160,13 @@ ul.posts li .date {
 .highlight .vi { color: #7587A6; }
 
 .highlight {
-  background-color: #141414; color: #F8F8F8;
+  background-color: #141414;
+  color: #F8F8F8;
+  margin-bottom: 1em;
+  overflow: scroll;
 }
 
 .highlight pre {
-  font-size: 0.8em;
-  line-height: 1.2em;
-  margin-bottom: 1em;
-  overflow: scroll;
+  margin-bottom: 0;
   padding: 1em;
 }
