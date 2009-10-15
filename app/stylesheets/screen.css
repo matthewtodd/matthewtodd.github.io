@@ -95,7 +95,17 @@ img {
 }
 
 /* LAYOUT - Post */
-body#post p.about, body#post p.date {
+body#post p.about {
+  color: #888;
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+body#post h1 {
+  margin-bottom: 0;
+}
+
+body#post p.date {
   color: #888;
   font-size: 0.8em;
   margin-bottom: 1.2em;
