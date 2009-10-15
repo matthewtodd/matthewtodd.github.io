@@ -178,3 +178,33 @@ body#page ul.posts li .date {
   margin-bottom: 0;
   padding: 1em;
 }
+
+
+/* COMMENTS */
+#disqus_thread {
+  font-size: inherit;
+}
+
+#dsq-content {
+  font-size: 0.8em !important;
+  line-height: 1.2em !important;
+}
+
+#dsq-content a:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+#dsq-content small {
+  font-size: 0.8em !important;
+  line-height: 1.2em !important;
+}
+
+#dsq-comments-title {
+  display: none;
+}
+
+.dsq-comment {
+  margin-bottom: 1.5em !important;
+}
