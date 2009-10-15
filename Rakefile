@@ -12,7 +12,12 @@ end
 desc 'Publish the website'
 task :publish => :default do
   sh 'rsync --recursive --delete public/ woodward:web/public'
-  sh 'curl http://feedburner.google.com/fb/a/pingSubmit?bloglink=http%3A%2F%2Fmatthewtodd.org%2Ffeed.atom'
+
+  require 'net/http'
+  require 'uri'
+  feedburner_ping_uri       = URI.parse('http://feedburner.google.com/fb/a/pingSubmit')
+  feedburner_ping_uri.query = "bloglink=#{URI.escape('http://matthewtodd.org/feed.atom')}"
+  Net::HTTP.get(feedburner_ping_uri)
 end
 
 desc 'Serve the website locally'
