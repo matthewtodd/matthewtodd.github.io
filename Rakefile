@@ -26,5 +26,5 @@ task :serve do
   server = WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => 'public')
   thread = Thread.new { server.start }
   trap('INT') { server.shutdown }
-  thread.join()
+  thread.join
 end
