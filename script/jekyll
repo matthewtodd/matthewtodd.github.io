@@ -7,4 +7,12 @@ end
 append_to_environment('RUBYLIB', 'lib', File::PATH_SEPARATOR)
 append_to_environment('RUBYOPT', '-rmonkey_patches')
 
+if ARGV.include?('--pygments') && `which pygmentize`.strip.empty?
+  abort <<-END.gsub(/^ */, '')
+    -------------------------------------------------------
+    Please `easy_install Pygments` for syntax highlighting.
+    -------------------------------------------------------
+  END
+end
+
 exec 'jekyll', 'app', 'public', *ARGV
