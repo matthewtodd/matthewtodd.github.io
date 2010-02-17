@@ -1,2 +1,10 @@
 #!/usr/bin/env ruby
+
+def append_to_environment(variable, value, separator=' ')
+  ENV[variable] = [ENV[variable], value].compact.join(separator)
+end
+
+append_to_environment('RUBYLIB', 'lib', File::PATH_SEPARATOR)
+append_to_environment('RUBYOPT', '-rmonkey_patches')
+
 exec 'jekyll', 'app', 'public', *ARGV
