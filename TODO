@@ -1,5 +1,3 @@
-* figure out a more permanent way to patch classifier's lsi.rb, a la http://rubyforge.org/tracker/index.php?func=detail&aid=17839&group_id=655&atid=2587
-
 * fold into matthewtodd_org repository
 * push matthewtodd_org repository to github?
 * clean up var/www on woodward
