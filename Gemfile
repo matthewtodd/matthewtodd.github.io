@@ -1,3 +1,4 @@
-clear_sources
-source 'http://gemcutter.org'
-gem 'jekyll'
+source :gemcutter
+
+gem 'jekyll', '0.5.4'
+gem 'rake'
