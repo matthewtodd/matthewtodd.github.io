@@ -1,0 +1,43 @@
+--- 
+dependencies: 
+  gsl: 
+    group: 
+    - :default
+    version: = 1.12.109
+  jekyll: 
+    group: 
+    - :default
+    version: = 0.5.4
+  rake: 
+    group: 
+    - :default
+    version: = 0.8.7
+specs: 
+- liquid: 
+    version: 2.0.0
+- open4: 
+    version: 1.0.1
+- RedCloth: 
+    version: 4.2.3
+- stemmer: 
+    version: 1.0.1
+- syntax: 
+    version: 1.0.0
+- directory_watcher: 
+    version: 1.3.1
+- rake: 
+    version: 0.8.7
+- classifier: 
+    version: 1.3.1
+- maruku: 
+    version: 0.6.0
+- jekyll: 
+    version: 0.5.4
+- narray: 
+    version: 0.5.9.7
+- gsl: 
+    version: 1.12.109
+hash: d03c730d12bbab419e8ed3d860dce1bd67897ef1
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org
