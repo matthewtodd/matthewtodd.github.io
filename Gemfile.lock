@@ -3,26 +3,26 @@ dependencies:
   gsl: 
     group: 
     - :default
-    version: = 1.12.109
+    version: ">= 0"
   jekyll: 
     group: 
     - :default
-    version: = 0.5.4
+    version: ">= 0"
   rake: 
     group: 
     - :default
-    version: = 0.8.7
+    version: ">= 0"
   bundler: 
     group: 
     - :default
-    version: = 0.9.14
+    version: ">= 0"
 specs: 
 - rake: 
     version: 0.8.7
 - RedCloth: 
     version: 4.2.3
 - bundler: 
-    version: 0.9.14
+    version: 0.9.18
 - stemmer: 
     version: 1.0.1
 - classifier: 
@@ -43,7 +43,7 @@ specs:
     version: 1.0.1
 - jekyll: 
     version: 0.5.4
-hash: d0a7bd1b127fbfa04ac04e03e026ec6f1cd18a6d
+hash: e14aabafaf20a5b2d7237aa44d6d353b865a2650
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
