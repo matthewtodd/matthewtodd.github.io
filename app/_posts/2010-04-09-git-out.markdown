@@ -1,0 +1,45 @@
+---
+title: git out
+layout: post
+---
+
+I've been using a new <code>git</code> alias lately, and it's been useful
+enough I thought it would be good to share:
+
+<div class="highlight"><pre>
+[alias]
+    out = !git log --boundary $(git rev-list --max-count=1 --simplify-by-decoration HEAD^)..
+</pre></div>
+
+The basic idea behind <code>`git out`</code> is to show your current
+"outstanding" commits, whether they be on a topic branch or unpushed back to
+your most recent remote.
+
+So, in my <a href="http://github.com/matthewtodd/shoe">shoe</a> project,
+<code>`git out`</code> on the <code>master</code> branch currently shows I have
+4 unpushed commits:
+
+<div class="highlight"><pre>
+<span style="color:#0cc">(ruby-1.8.7-p249@shoe)</span> ~/Code/shoe <span style="color:#c0c">(master)</span> git out
+<span style="color:#0c0">25e7118</span> <span style="color:#cc0">(HEAD, master)</span> Add --webcvs to rdoc_options. <span style="color:#0cc">33 minutes ago</span>
+<span style="color:#0c0">9c58b84</span> Note the shoe executable could use resiliency. <span style="color:#0cc">2 hours ago</span>
+<span style="color:#0c0">105fe2d</span> Clean up cucumber task. <span style="color:#0cc">2 hours ago</span>
+<span style="color:#0c0">e37b0d5</span> Explain commented-out calls in generated gemspec. <span style="color:#0cc">2 hours ago</span>
+<span style="color:#0c0">3faf5ec</span> <span style="color:#cc0">(v0.5.1, origin/master)</span> Release 0.5.1 <span style="color:#0cc">20 hours ago</span>
+<span style="color:#0cc">(ruby-1.8.7-p249@shoe)</span> ~/Code/shoe <span style="color:#c0c">(master)</span>
+</pre></div>
+
+And <code>`git out`</code> on the <code>man</code> topic branch shows one
+unmerged commit:
+
+<div class="highlight"><pre>
+<span style="color:#0cc">(ruby-1.8.7-p249@shoe)</span> ~/Code/shoe <span style="color:#c0c">(man)</span> git out
+<span style="color:#0c0">f25dd3e</span> <span style="color:#cc0">(HEAD, man)</span> Start experimenting with ronn in the Rakefile. <span style="color:#0cc">61 seconds ago</span>
+<span style="color:#0c0">25e7118</span> <span style="color:#cc0">(master)</span> Add --webcvs to rdoc_options. <span style="color:#0cc">49 minutes ago</span>
+<span style="color:#0cc">(ruby-1.8.7-p249@shoe)</span> ~/Code/shoe <span style="color:#c0c">(man)</span>
+</pre></div>
+
+And that's about it. I'd love to know if you end up using this, since things
+can get awful lonely over here sometimes. :-) Also, thanks to <a
+href="http://github.com/jferris/config_files/blob/master/gitconfig">Joe
+Ferris</a> for the fun name!
