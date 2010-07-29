@@ -1,9 +1,30 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head profile="http://gmpg.org/xfn/11">
-    {% include head.html %}
+<body id="post">
+  <header>
+    <h1><a href="/about.html">Matthew Todd</a></h1>
+  </header>
+
+  <article>
+    <header>
+      <h1>{{ page.title }}</h1>
+      <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate="pubdate">
+        {{ page.date | date: "%A, %B %e, %Y"}}
+      </time>
+    </header>
+
+    {{ content }}
+  </article>
+
+  <section class="comments">
+    <header>
+      <h1>Comments</h1>
+    </header>
+
+    <div id="disqus_thread">
+    </div>
 
     <script type="text/javascript">
       if (window.location.hostname && window.location.hostname == 'localhost') {
@@ -11,24 +32,12 @@
         var disqus_url = "http://matthewtodd.org{{ page.url }}";
       }
     </script>
-  </head>
-
-  <body id="post">
-    <p class="about"><a href="/about.html">Matthew Todd</a></p>
-    <h1>{{ page.title }}</h1>
-    <p class="date">{{ page.date | date: "%A, %B %e, %Y"}}</p>
-
-    {{ content }}
-
-    <h2>Comments</h2>
-
-    <div id="disqus_thread">
-    </div>
 
     <script type="text/javascript" src="http://disqus.com/forums/matthewtodd/embed.js"></script>
 
     <noscript>
       <p><a href="http://disqus.com/forums/matthewtodd/?url=ref">View comments on disqus&hellip;</a></p>
     </noscript>
-  </body>
+  </section>
+</body>
 </html>
