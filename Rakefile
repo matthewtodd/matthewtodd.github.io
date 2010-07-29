@@ -6,7 +6,7 @@ end
 desc 'Build the website'
 task :default do
   sh 'rm -rf public'
-  sh 'script/jekyll --lsi --pygments'
+  sh 'script/jekyll --pygments'
 end
 
 desc 'Publish the website'
