@@ -1,11 +1,5 @@
 #!/usr/bin/env ruby
 
-def append_to_environment(variable, value, separator=' ')
-  ENV[variable] = [ENV[variable], value].compact.join(separator)
-end
-
-append_to_environment('RUBYOPT', '-rrubygems')
-
 if ARGV.include?('--pygments') && `which pygmentize`.strip.empty?
   abort <<-END.gsub(/^ */, '')
     -------------------------------------------------------
