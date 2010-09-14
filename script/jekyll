@@ -8,4 +8,4 @@ if ARGV.include?('--pygments') && `which pygmentize`.strip.empty?
   END
 end
 
-exec 'jekyll', 'app', 'public', *ARGV
+exec 'jekyll', *ARGV
