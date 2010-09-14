@@ -1,11 +1,10 @@
 desc 'Remove ignored files'
 task :clean do
-  sh 'git clean -fdX'
+  sh 'rm -rf public'
 end
 
 desc 'Build the website'
-task :default do
-  sh 'rm -rf public'
+task :default => :clean do
   sh 'script/jekyll --pygments'
 end
 
