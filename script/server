@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-if ARGV.include?('auto')
+if ARGV.include?('--auto')
   # Since we're auto-reloading, we don't want pygments or lsi here
   exec 'script/jekyll', '--auto', '--server', '3000'
 else
