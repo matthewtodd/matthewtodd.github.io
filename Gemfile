@@ -1,5 +1,2 @@
-source :gemcutter
-
-gem 'bundler'
+source :rubygems
 gem 'jekyll'
-gem 'rake'
