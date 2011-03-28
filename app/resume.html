@@ -35,7 +35,7 @@
         lodges. It receives customer and product lists from Quickbooks and
         generates packing lists and invoices in return. As internet access is
         frustratingly slow, I've paid close attention to load times, keeping
-        pages light and assets aggressively cached. Rails, hosted on
+        pages light and assets aggressively cached. Written in Rails, hosted on
         Heroku.</p>
       </section>
 
@@ -58,8 +58,8 @@
         tracking inventory for multiple distributors and accepting payments by
         PayPal and JustGiving. Over the past 2 seasons, this app has handled
         hundreds of orders, representing over $20,000 raised for the Amani
-        children. <a href="https://github.com/amanikids/cards">Rails</a>,
-        hosted on Heroku.
+        children. <a href="https://github.com/amanikids/cards">Written in
+          Rails</a>, hosted on Heroku.
       </section>
 
       <section>
@@ -68,8 +68,8 @@
         and schedule their visits to children's families in the hopes of
         reunification. From their workflows, it also displays overview
         statistics for management staff. <a
-          href="https://github.com/amanikids/kituo">Rails</a>, originally
-        hosted internally, recently moved to Heroku and S3.</p>
+          href="https://github.com/amanikids/kituo">Written in Rails</a>,
+        originally hosted internally, recently moved to Heroku and S3.</p>
       </section>
 
       <section>
@@ -77,8 +77,9 @@
         <p>Live at <a class="self"
           href="http://amanikids.org/">amanikids.org</a> since November 2008,
         replacing a 5-year-old PHP site. <a
-          href="https://github.com/amanikids/website">Rails</a>, originally
-        hosted on a Joyent Accelerator, since moved to Heroku and S3.</p>
+          href="https://github.com/amanikids/website">Written in Rails</a>,
+        originally hosted on a Joyent Accelerator, since moved to Heroku and
+        S3.</p>
       </section>
 
       <section>
@@ -125,22 +126,28 @@
 
       <section>
         <h1>Deploying a Chef Server on Heroku</h1>
-      http://github.com/matthewtodd/skillet
-      http://github.com/matthewtodd/hideabed
-      http://github.com/matthewtodd/doily
+        <p>I dug into Chef's server code just enough to learn how to <a
+          href="https://github.com/matthewtodd/skillet">Rack it up
+          directly</a>. Along the way, I also wrote a minimal <a
+          href="https://github.com/matthewtodd/hideabed">CouchDB clone in
+          Rails</a> with a simple <a
+          href="https://github.com/matthewtodd/doily">JavaScript
+          interpreter</a>. Unfortunately, Chef clients are pretty HTTP-chatty,
+        so using a remote Chef server doesn't yet make much sense in
+        Tanzania.</p>
       </section>
 
       <section>
-        <h1><a href="https://github.com/svenfuchs/rails-i18n/commits/master?author=matthewtodd">Swahili Translations for Rails</a></h1>
       </section>
 
       <section>
         <h1>Other Open-Source Contributions</h1>
         <ul>
-          <li><a href="https://github.com/opscode/chef/commits/master?author=matthewtodd">Chef</a></li>
+          <li><a href="https://github.com/opscode/chef/commits/master?author=matthewtodd">Chef</a> &mdash; <a href="http://www.opscode.com/blog/2009/08/13/chef-0-7-8-release/">0.7.8 <q>Bug Killer</q></a></li>
           <li><a href="https://github.com/wincent/Command-T/commits/master?author=matthewtodd">Command-T</a></li>
-          <li><a href="https://github.com/mxcl/homebrew/commits/master?author=matthewtodd">Homebrew</a></li>
+          <li><a href="https://github.com/mxcl/homebrew/commits/master?author=matthewtodd">Homebrew</a> &mdash; <code>dvdrtools</code> recipe</li>
           <li><a href="https://github.com/net-ssh/net-ssh/commits/master?author=matthewtodd"><code>Net::SSH</code></a></li>
+          <li><a href="https://github.com/svenfuchs/rails-i18n/commits/master?author=matthewtodd">Rails I18n</a> &mdash; Swahili translations</li>
           <li><a href="https://github.com/rspec/rspec-rails/commits/master?author=matthewtodd"><code>rspec-rails</code></a></li>
         </ul>
       </section>
