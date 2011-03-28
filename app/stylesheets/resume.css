@@ -3,17 +3,17 @@ body, select, input, textarea {
 }
 
 body {
-  margin: 1em;
+  margin: 1.231em;
 }
 
 h2, h3, h4, h5, h6 { font-weight: normal; }
 
-header h1 {
-  font-size: 2em;
+header, section {
+  margin-bottom: 1.231em;
 }
 
-header, section {
-  margin-bottom: 1em;
+header h1 {
+  font-size: 2em;
 }
 
 @media print {
