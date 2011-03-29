@@ -8,20 +8,26 @@ body {
 
 h2, h3, h4, h5, h6 { font-weight: normal; }
 
-header, section, ul {
+hgroup, section, ul {
   margin-bottom: 1.231em;
 }
 
-header h1 {
+header hgroup h1 {
   font-size: 2em;
 }
 
+section hgroup h1 {
+  font-size: 1.5em;
+}
+
 section {
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding-top: 1.231em;
 }
 
 section section {
-  border-bottom: none;
+  border-top: none;
+  padding-top: 0;
 }
 
 @media print {
