@@ -6,7 +6,7 @@ layout: post
 
 Doh stops your version control commit if you've forgotten to add some files.
 
-I last <a href="/2007/08/17/preventing-commits-with-unadded-files.html">wrote about Doh</a> in August. You may remember this part:
+I last <a href="{{ site.url }}/2007/08/17/preventing-commits-with-unadded-files.html">wrote about Doh</a> in August. You may remember this part:
 
 <pre><code>
 DDDDDDDDDDDDD                         hhhhhhh

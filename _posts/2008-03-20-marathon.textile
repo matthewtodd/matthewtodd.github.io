@@ -22,4 +22,4 @@ By the time I got to the finish line, I could keep running, but I think that was
 
 Two and a half weeks later, I'm feeling great, and totally eager to keep running. There's supposed to be a <a href="http://www.serengetimarathon.com/run/index.php/serengeti-half-marathon/">half-marathon in the Serengeti</a> in June, and it looks like there are some other folks here who'd also be interested---though it'll be one heckuva road trip to get all the way out there!
 
-Also, thanks so much to all of you who helped <a href="/2008/02/08/running-for-the-kilimanjaro-porters-assistance-project/">support</a> the Porters Assistance Project. We came in over our goal, and Karen's thrilled!
+Also, thanks so much to all of you who helped <a href="{{ site.url }}/2008/02/08/running-for-the-kilimanjaro-porters-assistance-project/">support</a> the Porters Assistance Project. We came in over our goal, and Karen's thrilled!
