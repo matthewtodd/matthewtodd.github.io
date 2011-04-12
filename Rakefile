@@ -5,7 +5,7 @@ end
 
 desc 'Build the website'
 task :default => :clean do
-  sh 'script/jekyll --pygments'
+  sh 'jekyll --pygments'
 end
 
 desc 'Start a new post'

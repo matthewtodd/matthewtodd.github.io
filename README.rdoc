@@ -1,0 +1,8 @@
+= Setup
+
+  bundle install
+  easy_install Pygments
+
+= Usage
+
+  jekyll --server
