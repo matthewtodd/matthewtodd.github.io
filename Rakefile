@@ -20,7 +20,7 @@ end
 desc 'Publish the website'
 task :publish do
   sh 'rm -rf _site'
-  sh 'jekyll --no-auto --pygments --url http://matthewtodd.org'
+  sh 'jekyll --no-auto --no-server --pygments --url http://matthewtodd.org'
   sh 'rsync --recursive --delete _site/ woodward:web/public'
   sh 'curl --head http://feedburner.google.com/fb/a/pingSubmit?bloglink=http://matthewtodd.org/feed.atom'
 end

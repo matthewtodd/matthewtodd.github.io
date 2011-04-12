@@ -5,4 +5,10 @@
 
 = Usage
 
-  jekyll --server
+Run the server:
+
+  jekyll
+
+Run the server with syntax highlighting (slower):
+
+  jekyll --pygments
