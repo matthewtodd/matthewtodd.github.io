@@ -1,13 +1,3 @@
-desc 'Remove ignored files'
-task :clean do
-  sh 'rm -rf _site'
-end
-
-desc 'Build the website'
-task :default => :clean do
-  sh 'jekyll --pygments'
-end
-
 desc 'Start a new post'
 task :new, :title do |task, args|
   if args.title
@@ -28,7 +18,9 @@ task :new, :title do |task, args|
 end
 
 desc 'Publish the website'
-task :publish => :default do
+task :publish do
+  sh 'rm -rf _site'
+  sh 'jekyll --no-auto --pygments'
   sh 'rsync --recursive --delete _site/ woodward:web/public'
   sh 'curl --head http://feedburner.google.com/fb/a/pingSubmit?bloglink=http://matthewtodd.org/feed.atom'
 end
