@@ -1,4 +1,2 @@
-source: app
-destination: public
 auto: true
 server_port: 3000
