@@ -1,2 +1,7 @@
 auto: true
 server_port: 3000
+exclude:
+- Gemfile
+- Gemfile.lock
+- README.rdoc
+- Rakefile
