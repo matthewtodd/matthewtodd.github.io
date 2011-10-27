@@ -4,9 +4,9 @@ layout: post
 ---
 <p>Making a gem of your custom Capistrano recipes is a nice way to remove duplicated knowledge across your Rails projects.</p>
 
-<p>On your first pass, you'll probably do what I did: gank and modify <a href="http://github.com/jamis/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/recipes/deploy.rb"><code>capistrano/recipes/deploy.rb</code></a>.</p>
+<p>On your first pass, you'll probably do what I did: gank and modify <a href="http://github.com/capistrano/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/recipes/deploy.rb"><code>capistrano/recipes/deploy.rb</code></a>.</p>
 
-<p>This works great, but you'll find it's a little tricky to use your new recipes from a <code>Capfile</code>. It turns out you can't just "<code>require mygem</code>" and "<code>load 'mygem/recipes/deploy'</code>" because Capistrano doesn't <code>load</code> from ruby's <code>$LOAD_PATH</code>&mdash;it keeps its own <a href="http://github.com/jamis/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/configuration/loading.rb#L57">minimally-initialized</a> <code>load_paths</code> setting instead.</p>
+<p>This works great, but you'll find it's a little tricky to use your new recipes from a <code>Capfile</code>. It turns out you can't just "<code>require mygem</code>" and "<code>load 'mygem/recipes/deploy'</code>" because Capistrano doesn't <code>load</code> from ruby's <code>$LOAD_PATH</code>&mdash;it keeps its own <a href="http://github.com/capistrano/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/configuration/loading.rb#L57">minimally-initialized</a> <code>load_paths</code> setting instead.</p>
 
 <p>So, you have to either modify the <code>load_paths</code> or use an absolute path, like this:</p>
 
@@ -16,11 +16,11 @@ load Gem.required_location('wordpress', 'wordpress/recipes/deploy.rb')
 load 'config/deploy'
 {% endhighlight %}
 
-<p>This is what I did for a while, but something didn't seem right. My <code>Capfile</code> didn't look as nice as I expected, and I wasn't using <a href="http://github.com/jamis/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/configuration/loading.rb#L104"><code>require</code></a>, whose comments clearly mention third-party recipes.</p>
+<p>This is what I did for a while, but something didn't seem right. My <code>Capfile</code> didn't look as nice as I expected, and I wasn't using <a href="http://github.com/capistrano/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/configuration/loading.rb#L104"><code>require</code></a>, whose comments clearly mention third-party recipes.</p>
 
 <h2>Take two</h2>
 
-<p>Staring at <code>capistrano/configuration/loading.rb</code> until it made sense, I saw <a href="http://github.com/jamis/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/configuration/loading.rb#L11"><code>instance</code></a>, which triggered some vague distant memory that somehow turned into a productive thought:</p>
+<p>Staring at <code>capistrano/configuration/loading.rb</code> until it made sense, I saw <a href="http://github.com/capistrano/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/configuration/loading.rb#L11"><code>instance</code></a>, which triggered some vague distant memory that somehow turned into a productive thought:</p>
 
 <p>If you wrap your <code>deploy.rb</code> recipes in a load block, like this:</p>
 
