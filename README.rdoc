@@ -12,3 +12,7 @@ Run the server:
 Run the server with syntax highlighting (slower):
 
   jekyll --pygments
+
+= Deploy
+
+  rake publish
