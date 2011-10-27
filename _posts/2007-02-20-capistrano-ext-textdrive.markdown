@@ -73,8 +73,8 @@ set :repository,    YOUR_REPOSITORY_PATH
 Do be sure to read through the gem code first to understand what it's doing -- I expect things will generally work fine, but it would be a shame to run into trouble with it.
 
 <h3>A few notes</h3>
-One last unautomated bit is that you'll need to set <a href="http://httpd.apache.org/docs/2.2/mod/mod_proxy.html#proxypreservehost"><code>ProxyPreserveHost On</code></a> for each Apache virtual host into which you're deploying rails apps this way. (See steps 10-12 in <a href="http://help.textdrive.com/index.php?pg=kb.page&id=255">this bit of TextDrive documentation</a>.)
+One last unautomated bit is that you'll need to set <a href="http://httpd.apache.org/docs/2.2/mod/mod_proxy.html#proxypreservehost"><code>ProxyPreserveHost On</code></a> for each Apache virtual host into which you're deploying rails apps this way. (See steps 10-12 in <a href="http://help.textdrive.com/index.php?pg=kb.page&amp;id=255">this bit of TextDrive documentation</a>.)
 
-Most of this approach comes from <a href="http://help.textdrive.com/index.php?pg=kb.chapter&id=71">Installing a Rails Application at TextDrive</a>, in the TextDrive knowledge base.
+Most of this approach comes from <a href="http://help.textdrive.com/index.php?pg=kb.chapter&amp;id=71">Installing a Rails Application at TextDrive</a>, in the TextDrive knowledge base.
 
 See also <a href="http://nubyonrails.com/pages/shovel">Shovel</a>, from Geoffrey Grosenbach.
