@@ -19,6 +19,7 @@ end
 
 desc 'Publish the website'
 task :publish do
+  sh 'which pygmentize'
   sh 'rm -rf _site'
   sh 'jekyll --no-auto --no-server --pygments --url http://matthewtodd.org'
   sh 'rsync --recursive --progress --delete --exclude=downloads _site/ college:web/public'
