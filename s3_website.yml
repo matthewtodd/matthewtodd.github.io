@@ -1,0 +1,10 @@
+gzip: true
+
+max_age:
+  "images/*": 6000
+  "*": 300
+
+s3_bucket: matthewtodd.org
+s3_id: <%= File.readlines('.s3credentials').first.strip %>
+s3_secret: <%= File.readlines('.s3credentials').last.strip %>
+s3_reduced_redundancy: true
