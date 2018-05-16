@@ -1,9 +1,9 @@
-= Setup
+## Setup
 
-  bundle
+    bundle
 
-= Usage
+## Usage
 
 Run the server:
 
-  jekyll serve --watch
+    jekyll s
