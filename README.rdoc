@@ -1,14 +1,9 @@
 = Setup
 
-  bundle install
-  easy_install Pygments
+  bundle
 
 = Usage
 
 Run the server:
 
-  jekyll
-
-Run the server with syntax highlighting (slower):
-
-  jekyll --pygments
+  jekyll serve --watch
