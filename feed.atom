@@ -1,10 +1,10 @@
 ---
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-US" xml:base="/feed.atom" xmlns="http://www.w3.org/2005/Atom">
+<feed xml:lang="en-US" xml:base="https://matthewtodd.org/feed.atom" xmlns="http://www.w3.org/2005/Atom">
   <id>tag:matthewtodd.org,2009:/feed.atom</id>
-  <link rel="alternate" type="text/html" href="." />
-  <link rel="self" type="application/atom+xml" href="/feed.atom" />
+  <link rel="alternate" type="text/html" href="https://matthewtodd.org" />
+  <link rel="self" type="application/atom+xml" href="https://matthewtodd.org/feed.atom" />
   <logo>/images/matthewtodd_small.jpg</logo>
   <title>Matthew Todd</title>
   <subtitle>Software development and life in Moshi, Tanzania</subtitle>
