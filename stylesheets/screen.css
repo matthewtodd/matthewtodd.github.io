@@ -193,31 +193,3 @@ nav ul li time {
   margin-bottom: 0;
   padding: 1em;
 }
-
-
-/* COMMENTS */
-section.comments {
-  background-color: #f0f8ff;
-  font-size: 1em !important;
-  line-height: 1.4em !important;
-  padding: 1em;
-}
-
-#dsq-content {
-  font-size: 1em !important;
-  line-height: 1.4em !important;
-}
-
-#dsq-content a:hover {
-  background-color: #000 !important;
-  color: #fff !important;
-  text-decoration: none !important;
-}
-
-#dsq-comments-title {
-  display: none;
-}
-
-.dsq-comment {
-  margin-bottom: 1.4em !important;
-}
