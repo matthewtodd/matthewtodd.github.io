@@ -2,7 +2,7 @@
 title: Preventing Commits with Unadded Files
 layout: post
 ---
-<p class="update"><strong>Update, 17 April 2009:</strong> doh lives <a href="{{ "/2008/04/09/doh-021.html" | absolute_url }}">as a gem</a> <a href="http://github.com/matthewtodd/doh">on github</a> now.</p>
+<p class="update"><strong>Update, 17 April 2009:</strong> doh lives <a href="/2008/04/09/doh-021.html">as a gem</a> <a href="http://github.com/matthewtodd/doh">on github</a> now.</p>
 
 Today I added a new file to an in-progress Rails app, watched all the tests pass, and committed. Except I forgot to <code>svn add</code> the new file. <strong>Again.</strong>
 

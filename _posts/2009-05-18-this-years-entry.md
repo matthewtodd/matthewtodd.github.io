@@ -3,7 +3,7 @@ title: This Year's Entry
 layout: post
 ---
 
-<p>Valerie's Mom's coming for a visit next week, and so, <a href="{{ "/2007/09/28/perquackey.html" | absolute_url }}">in keeping with tradition</a>, it's time for a little Perquackey smack talk:</p>
+<p>Valerie's Mom's coming for a visit next week, and so, <a href="/2007/09/28/perquackey.html">in keeping with tradition</a>, it's time for a little Perquackey smack talk:</p>
 
 <blockquote>
   <p>

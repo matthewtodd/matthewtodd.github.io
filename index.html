@@ -10,7 +10,7 @@ title: Matthew Todd
       <time datetime="{{ post.date | date: "%Y-%m-%d" }}" pubdate="pubdate">
         {{ post.date | date: "%Y %B %e"}}
       </time>
-      <a href="{{ post.url | absolute_url }}" rel="bookmark">{{ post.title }}</a>
+      <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
     </li>
   {% endfor %}
   </ul>

@@ -2,7 +2,7 @@
 title: Subscribing to Feeds
 layout: post
 ---
-If you'd like to give the <a href="{{ "/2007/03/15/reading/" | absolute_url }}">Bible-reading feeds</a> a try but don't know where to start, here's a quick guide:
+If you'd like to give the <a href="/2007/03/15/reading/">Bible-reading feeds</a> a try but don't know where to start, here's a quick guide:
 
 <ol>
 <li>Visit <a href="http://reading.matthewtodd.org/plans/discipleship-journal">http://reading.matthewtodd.org/plans/discipleship-journal</a>.</li>
