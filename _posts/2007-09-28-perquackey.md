@@ -16,41 +16,37 @@ Valerie's parents were here visiting for a few weeks, during which time her mom 
 
 Which, apparently, gives you more time for trash-talking. Weeks before their arrival, I started getting gems like this in my inbox:
 
-<blockquote>
-Perquackey players like you don't grow on trees. They swing from them.
-</blockquote>
+> Perquackey players like you don't grow on trees. They swing from them.
 
 And, well, you just can't let something like that slide. After the inevitable escalation, we'd raised the medium to an art form:
 
-<blockquote>
-In the great wild Serengett,
-A dik dik grazes, 'till he's met in
-Millisecond lightning flash,
-Tim-tumbled over, turned to
-Hash.
-
-Eaten live by
-Powerful beast,
-
-Eviscerated
-Raw, deceased.
-
-Quite the scene
-Under the sun,
-Although another "death" shall
-Come, when self-appointed Queen Per-
-Kathy, unsuspecting,
-Minces daftly,
-Aligning letters one by one,
-Slowly, surely, not much fun.
-
-Then sit I in to take my turn
-Egads! How did this kid here learn?
-Round one completed, so the game,
-Your skills shown up to be quite lame.
-
-Ouch.
-</blockquote>
+> In the great wild Serengett,  
+> A dik dik grazes, 'till he's met in  
+> Millisecond lightning flash,  
+> Tim-tumbled over, turned to  
+> Hash.
+>
+> Eaten live by  
+> Powerful beast,
+>
+> Eviscerated  
+> Raw, deceased.
+>
+> Quite the scene  
+> Under the sun,  
+> Although another "death" shall  
+> Come, when self-appointed Queen Per-  
+> Kathy, unsuspecting,  
+> Minces daftly,  
+> Aligning letters one by one,  
+> Slowly, surely, not much fun.
+>
+> Then sit I in to take my turn  
+> Egads! How did this kid here learn?  
+> Round one completed, so the game,  
+> Your skills shown up to be quite lame.
+>
+> Ouch.
 
 The alert reader will note the first letters of each line spell out "I am the perquackmaster, yo."
 
