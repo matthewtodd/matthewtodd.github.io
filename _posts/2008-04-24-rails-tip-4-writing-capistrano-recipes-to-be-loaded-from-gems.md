@@ -10,11 +10,11 @@ layout: post
 
 <p>So, you have to either modify the <code>load_paths</code> or use an absolute path, like this:</p>
 
-{% highlight ruby %}
+```ruby
 %w( rubygems wordpress ).each { |lib| require lib }
 load Gem.required_location('wordpress', 'wordpress/recipes/deploy.rb')
 load 'config/deploy'
-{% endhighlight %}
+```
 
 <p>This is what I did for a while, but something didn't seem right. My <code>Capfile</code> didn't look as nice as I expected, and I wasn't using <a href="http://github.com/capistrano/capistrano/tree/72a254d4221e37dce10e2e7e56b2abe36fc53452/lib/capistrano/configuration/loading.rb#L104"><code>require</code></a>, whose comments clearly mention third-party recipes.</p>
 
@@ -24,19 +24,19 @@ load 'config/deploy'
 
 <p>If you wrap your <code>deploy.rb</code> recipes in a load block, like this:</p>
 
-{% highlight ruby %}
+```ruby
 Capistrano::Configuration.instance(:must_exist).load do
   # previous file contents here
 end
-{% endhighlight %}
+```
 
 <p>You can simplify your <code>Capfile</code> with a shorter <code>require</code> statement:</p>
 
-{% highlight ruby %}
+```ruby
 require 'rubygems'
 require 'wordpress/recipes/deploy'
 load    'config/deploy'
-{% endhighlight %}
+```
 
 <p>Nice. I'm still a little bummed by the <code>require</code> / <code>load</code> imbalance, but on the whole this feels more like things were supposed to be.</p>
 

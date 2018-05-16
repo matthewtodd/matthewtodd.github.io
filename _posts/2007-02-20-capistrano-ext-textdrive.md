@@ -6,12 +6,12 @@ I've finally found a workable set of deployment practices for getting my little 
 
 What is kind of fun, though, is that I've reduced almost all of the duplication across my deploy.rb files, so now they look like this:
 
-{% highlight ruby%}
+```ruby
 require 'capistrano/ext/textdrive'
 
 set :application, 'reading'
 set :domain,      'matthewtodd.org'
-{% endhighlight %}
+```
 
 This is exceedingly pleasing to me, because these are the only 2 settings I'd ever change from app to app---precisely what belongs in an application-specific configuration file.
 
@@ -52,15 +52,15 @@ Run this every time you deploy. An after\_update\_code convenience task has been
 
 This code's packaged as a gem, but I haven't released it anywhere yet. So:
 
-{% highlight bash %}
+```bash
 svn export http://matthewtodd.org/svn/public/capistrano-ext-textdrive
 cd capistrano-ext-textdrive
 rake install
-{% endhighlight %}
+```
 
 And then your deploy.rb is going to need a few more lines than mine, since I made the defaults fit my needs and tastes. It will probably end up looking something like this:
 
-{% highlight ruby %}
+```ruby
 require 'capistrano/ext/textdrive'
 
 set :application,   YOUR_APPLICATION
@@ -68,7 +68,7 @@ set :domain,        YOUR_DOMAIN
 set :user,          YOUR_USERNAME
 set :lighttpd_port, YOUR_LIGHTTPD_PORT
 set :repository,    YOUR_REPOSITORY_PATH
-{% endhighlight %}
+```
 
 Do be sure to read through the gem code first to understand what it's doing -- I expect things will generally work fine, but it would be a shame to run into trouble with it.
 

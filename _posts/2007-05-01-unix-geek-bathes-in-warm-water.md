@@ -14,11 +14,11 @@ The <tt><a href="http://en.wikipedia.org/wiki/Crontab">crontab</a></tt> file is 
 
 For what it's worth, here's mine:
 
-{% highlight bash %}
+```bash
 15 10,14 * * 1-5  /usr/local/bin/remind 'Take a minute to pray for Valerie and our marriage.'
 0  16    * * 1-5  /usr/local/bin/remind 'Open the gate for Valerie if she honks.'
 30 16    * * 1-5  /usr/local/bin/remind 'Now would be a great time to turn on the water heater.'
-{% endhighlight %}
+```
 
 (The schedule information is a little cryptic---the last line makes sure I turn on the water heater every weekday (1-5) at 4:30pm.)
 
@@ -26,11 +26,11 @@ For what it's worth, here's mine:
 
 Here's the <tt>remind</tt> script, just a simple wrapper around <tt><a href="http://www.growl.info/documentation/growlnotify.php">growlnotify</a></tt>:
 
-{% highlight bash %}
+```bash
 #!/bin/sh
 /opt/local/bin/growlnotify     \
   --appIcon iCal               \
   --message "$*"               \
   --sticky                     \
   --title 'Just a reminder'
-{% endhighlight %}
+```

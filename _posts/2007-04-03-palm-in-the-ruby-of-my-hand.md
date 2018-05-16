@@ -6,13 +6,13 @@ Today I've been playing with <a href="http://www.pilot-link.org/pilot-link">pilo
 
 Holy crap, this is fun stuff!
 
-{% highlight ruby %}
+```ruby
 Palm.connect do |handheld|
   handheld.open_database('ToDoDB') do |todo_list|
     assert_equal ['Unfiled'], todo_list.categories
   end
 end
-{% endhighlight %}
+```
 
 More coming in <a href="http://matthewtodd.org/svn/public/palm/">subversion</a> through the week.
 

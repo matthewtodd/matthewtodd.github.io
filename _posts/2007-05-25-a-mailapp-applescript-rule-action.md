@@ -6,7 +6,7 @@ I often forward email messages along to Valerie, but I usually clean the noise o
 
 So, following the examples in <tt>/Library/Scripts/Mail Scripts/Rule Actions</tt> and with a little help from <a href="http://www.indev.ca/MailActOn.html">Mail Act-On</a>, now I just have to hit &#x2303;V:
 
-{% highlight applescript %}
+```applescript
 using terms from application "Mail"
   on perform mail action with messages theMessages
     tell application "Mail"
@@ -22,6 +22,6 @@ using terms from application "Mail"
     end tell
   end perform mail action with messages
 end using terms from
-{% endhighlight %}
+```
 
 Dumb geek tricks.

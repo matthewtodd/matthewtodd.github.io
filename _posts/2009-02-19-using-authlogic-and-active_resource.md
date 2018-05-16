@@ -18,12 +18,12 @@ But I'd like to make one small adjustment, since I'm using ActiveResource and fo
 
 It turns out Authlogic makes this fairly easy:
 
-{% highlight ruby %}
+```ruby
 class UserSession < Authlogic::Session::Base
   # Adjust how Authlogic identifies the current user.
   # The default setting is :params, :session, :cookie, :http_auth.
   find_with :session, :cookie, :api_key
-  
+
   def valid_api_key?
     controller.authenticate_with_http_basic do |api_key, _|
       self.unauthorized_record = search_for_record("find_by_#{single_access_token_field}", api_key)
@@ -34,23 +34,23 @@ class UserSession < Authlogic::Session::Base
     end
   end
 end
-{% endhighlight %}
+```
 
 So now I can write a Widget Resource class like this:
 
-{% highlight ruby %}
+```ruby
 class Widget < ActiveResource::Base
   self.site = 'http://localhost:3000/'
   self.user = 'MY_API_TOKEN'
 end
-{% endhighlight %}
+```
 
 Or poke around with `curl`:
 
-{% highlight bash %}
+```bash
 # Create a new, empty Widget.
 curl --user   'MY_API_TOKEN:X'                \
      --header 'Content-Type: application/xml' \
      --data   '<widget></widget>'             \
      http://localhost:3000/widgets.xml
-{% endhighlight %}
+```

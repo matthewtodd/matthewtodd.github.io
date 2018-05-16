@@ -7,12 +7,12 @@ layout: post
 
 <p>Unless you drop down to the shell:</p>
 
-{% highlight bash %}
+```bash
 cd /Library/Application\ Support/VMware\ Fusion
 sudo ./boot.sh --stop        # bring down the vmnet interfaces
 sudo vi locations            # <-- THE MAGIC HAPPENS HERE
 sudo ./vmware-config-net.pl  # re-generate files in vmnet1/ and vmnet8/
 sudo ./boot.sh --start       # bring the vmnet interfaces back up
-{% endhighlight %}
+```
 
 <p>If you'd like to read more, start with <tt>/Library/LaunchDaemons/com.vmware.launchd.vmware.plist</tt>, which has <tt>/Library/Application Support/VMware Fusion/boot.sh</tt> run when your system comes up.</p>

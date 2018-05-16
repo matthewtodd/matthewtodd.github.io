@@ -4,17 +4,17 @@ layout: post
 ---
 Finding I was generating SHA1 digests in a bunch of places in my code, I spent Friday writing up a <a href="http://github.com/matthewtodd/has_digest">quick rails plugin</a> (with <a href="http://github.com/matthewtodd/has_digest/tree/master/test/has_digest_test.rb">tests</a> and a helpful <a href="http://github.com/matthewtodd/has_digest/tree/master/shoulda_macros/has_digest.rb">shoulda macro</a>) to make things easier:
 
-{% highlight ruby %}
+```ruby
 class User < ActiveRecord::Base
   has_digest :encrypted_password, :depends => :password
   has_digest :remember_me_token, :depends => [:login, :remember_me_token_expires_at]
   has_digest :token
 end
-{% endhighlight %}
+```
 
 For comparison's sake, here's how the <code>User</code> model used to look:
 
-{% highlight ruby %}
+```ruby
 class User < ActiveRecord::Base
   attr_accessor :password
 
@@ -52,7 +52,7 @@ class User < ActiveRecord::Base
     Time.now.to_s.split(//).sort_by { rand }.join
   end
 end
-{% endhighlight %}
+```
 
 I suppose this kind of thing is primarily useful if you're (as I was, for the sake of learning) putting together your own authentication system, though it also comes in handy when you need a non-guessable token for, say, a reset password request or a store order number.
 

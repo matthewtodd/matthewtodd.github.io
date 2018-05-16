@@ -8,7 +8,7 @@ layout: post
 
 <p>Here's a quick fix, <code>config/initializers/filter_db_files_logging.rb</code>:</p>
 
-{% highlight ruby %}
+```ruby
 class ActiveRecord::ConnectionAdapters::AbstractAdapter
   def format_log_entry_with_db_files_filtering(message, dump = nil)
     dump = 'INSERT INTO db_files' if dump.to_s =~ /^INSERT INTO db_files/
@@ -18,7 +18,7 @@ class ActiveRecord::ConnectionAdapters::AbstractAdapter
 
   alias_method_chain :format_log_entry, :db_files_filtering
 end
-{% endhighlight %}
+```
 
 <p>Note that this isn't yet a general solution (other tables' blobs will still be logged), but it's good enough for our needs, and we've got a known place we can come back to should we need to filter more blobs in the future.</p>
 

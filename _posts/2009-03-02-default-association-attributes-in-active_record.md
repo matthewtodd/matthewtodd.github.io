@@ -5,7 +5,7 @@ layout: post
 
 I cringe a little bit when I see a controller like this:
 
-{% highlight ruby %}
+```ruby
 class Admin::Subscribers::InvitationsController < Admin::ApplicationController
   before_filter :load_subscriber
   before_filter :build_invitation, :only => [:new, :create]
@@ -15,7 +15,7 @@ class Admin::Subscribers::InvitationsController < Admin::ApplicationController
     @invitation.email = @subscriber.email # *shudder*
   end
 end
-{% endhighlight %}
+```
 
 While it's almost okay, it irks me to have to explicitly set the Invitations's email address in the controller[^1][^2].
 
@@ -23,16 +23,16 @@ While it's almost okay, it irks me to have to explicitly set the Invitations's e
 
 What I really want is to set the email address _when I make an Invitation for a Subscriber_. There should only be two ways to say that:
 
-{% highlight ruby %}
+```ruby
 @subscriber.invitations.build
 @subscriber.invitations.create
-{% endhighlight %}
+```
 
 ## A Solution
 
 So, let's place the responsibility for setting the Invitation's email address directly inside the Subscriber's `has_many` association:
 
-{% highlight ruby %}
+```ruby
 class Subscriber < ActiveRecord::Base
   has_many :invitations, :as => :source, :extend => DefaultAssociationAttributes do
     def default_attributes
@@ -54,11 +54,11 @@ module DefaultAssociationAttributes
     default_attributes.merge((attrs || {}).symbolize_keys)
   end
 end
-{% endhighlight %}
+```
 
 And then clean up our controller:
 
-{% highlight ruby %}
+```ruby
 class Admin::Subscribers::InvitationsController < Admin::ApplicationController
   before_filter :load_subscriber
   before_filter :build_invitation, :only => [:new, :create]
@@ -67,7 +67,7 @@ class Admin::Subscribers::InvitationsController < Admin::ApplicationController
     @invitation = @subscriber.invitations.build(params[:invitation])
   end
 end
-{% endhighlight %}
+```
 
 ## Feedback?
 

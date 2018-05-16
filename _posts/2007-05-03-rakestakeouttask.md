@@ -13,14 +13,15 @@ Except I was a little troubled by the packaging, so I threw together a <a href="
 Think of it as a poor-man's <a href="http://www.zenspider.com/ZSS/Products/ZenTest/"><code>autotest</code></a>, without being <a href="http://zentest.rubyforge.org/ZenTest/classes/Autotest.html">tied to testing</a>.
 
 <h2>Installation and Usage</h2>
-{% highlight bash %}
+
+```bash
 svn co http://matthewtodd.org/svn/public/rake-stakeout
 cd rake-stakeout
 rake gem
 sudo gem install pkg/*.gem
-{% endhighlight %}
+```
 
-{% highlight ruby %}
+```ruby
 require 'rake/stakeouttask'
 
 Rake::StakeoutTask.new(:stakeout_rdoc) do |stakeout|
@@ -28,10 +29,10 @@ Rake::StakeoutTask.new(:stakeout_rdoc) do |stakeout|
   stakeout.stakeout_task = :rerdoc
   stakeout.notification_method = :growl
 end
-{% endhighlight %}
+```
 
-{% highlight bash %}
+```bash
 rake stakeout_rdoc
-{% endhighlight %}
+```
 
 Have fun! I'd love to hear if you decide to give this a try.

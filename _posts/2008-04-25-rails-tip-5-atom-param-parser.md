@@ -10,22 +10,22 @@ layout: post
 
 <p>So, we wrote <code>Hash.from_atom</code> to transform the incoming xml into the usual <code>{&nbsp;:entry&nbsp;=> {&nbsp;...&nbsp;}&nbsp;}</code> params. Then, we registered it in an initializer:</p>
 
-{% highlight ruby %}
+```ruby
 ActionController::Base.param_parsers[Mime::ATOM] = lambda do |body|
   Hash.from_atom(body)
 end
-{% endhighlight %}
+```
 
 <p>And our controller can now handle either regular form postings or AtomPub entries with the same line of code:</p>
 
-{% highlight ruby %}
+```ruby
 class EntriesController < ApplicationController
   def create
     @entry = @collection.entries.build(params[:entry])
     # ...
   end
 end
-{% endhighlight %}
+```
 
 <p>Not bad.</p>
 

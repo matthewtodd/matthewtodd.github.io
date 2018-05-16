@@ -10,7 +10,7 @@ layout: post
 
 <p>Here's an example of the technique in use, functionally testing a wiki parser we've been tinkering with. It can often be <a href="http://blog.jayfields.com/2008/03/testing-anti-pattern-metaprogrammed.html">painful to work with metaprogrammed tests</a> like this, but on balance, we like the results here:</p>
 
-{% highlight ruby %}
+```ruby
 require 'test_helper'
 
 class TestParser < Test::Unit::TestCase
@@ -42,7 +42,7 @@ WikiWord
 <p><a href="WikiWord">WikiWord</a></p>
 <p><a href="WikiWord">WikiWord</a></p>
 
-{% endhighlight %}
+```
 
 <h2>5 Rails tips</h2>
 

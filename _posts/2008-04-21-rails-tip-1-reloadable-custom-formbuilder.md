@@ -4,23 +4,23 @@ layout: post
 ---
 August Lilleaas has <a href="http://august.lilleaas.net/posts/form-builders-are-easy">a nice writeup</a> on making your own <code>FormBuilder</code>. Towards the end, he describes wiring it up as the default:
 
-<blockquote>
-<p>Create a new file called <code>config/initializers/setup.rb</code>. Or, if you're on pre-2.0, add it to the bottom of <code>config/environment.rb</code>:</p>
-
-<p><code>ActionView::Base.default_form_builder = LabellingFormBuilder</code></p>
-</blockquote>
+> Create a new file called <code>config/initializers/setup.rb</code>. Or, if you're on pre-2.0, add it to the bottom of <code>config/environment.rb</code>:
+>
+> ```ruby
+> ActionView::Base.default_form_builder = LabellingFormBuilder
+> ```
 
 Though "proper," this approach requires restarting the server to see changes in <code>LabellingFormBuilder</code>.
 
 You can avoid restarting the server by doing this instead:
 
-{% highlight ruby %}
+```ruby
 class ActionView::Base
   def self.default_form_builder
     LabellingFormBuilder
   end
 end
-{% endhighlight %}
+```
 
 It's a subtle difference, but it provides a nice window into understanding the <code>Dependencies</code> mechanism:
 

@@ -10,6 +10,6 @@ Now, <code>rsync</code> has long been my friend, but just today I've found its d
 
 Which brings me to the whole point of this post:
 
-{% highlight bash %}
+```bash
 rsync --partial matthewtodd.org:~/downloads/debian.iso .
-{% endhighlight %}
+```

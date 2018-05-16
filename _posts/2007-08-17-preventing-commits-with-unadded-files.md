@@ -26,15 +26,15 @@ Cool, huh?
 
 <h2>Installation</h2>
 
-{% highlight bash %}
+```bash
 wget http://matthewtodd.org/svn/public/doh/bin/doh
-{% endhighlight %}
+```
 
 And then create an alias, you know the drill:
 
-{% highlight bash %}
+```bash
 alias svn='/full/path/to/doh'
-{% endhighlight %}
+```
 
 <h2>Usage</h2>
 
@@ -42,9 +42,9 @@ Most of the time <code>doh</code> just does "<code>exec 'svn', *ARGV</code>", so
 
 To temporarily override <code>doh</code>'s behavior and commit anyway, just prefix the <code>svn</code> with a backslash:
 
-{% highlight bash %}
+```bash
 \svn ci -m "don't worry, I know what I'm doing"
-{% endhighlight %}
+```
 
 <h2>Feedback</h2>
 
