@@ -8,7 +8,7 @@ So, I remembered and downloaded Mike Clark's <a href="http://www.pragmaticautoma
 
 Except I was a little troubled by the packaging, so I threw together a <a href="http://matthewtodd.org/svn/public/rake-stakeout/lib/rake/stakeouttask.rb">new RubyGem</a>, adding in <a href="http://www.growl.info">Growl</a> support along the way:
 
-<img src="/images/2007/05/03/rakestakeouttask.png" width="500" height="375" alt="Rake::StakeoutTask" style="border: 1px solid #ccc;" />
+<img src="/images/2007/05/03/rakestakeouttask.png" width="500" height="375" alt="Rake::StakeoutTask" />
 
 Think of it as a poor-man's <a href="http://www.zenspider.com/ZSS/Products/ZenTest/"><code>autotest</code></a>, without being <a href="http://zentest.rubyforge.org/ZenTest/classes/Autotest.html">tied to testing</a>.
 

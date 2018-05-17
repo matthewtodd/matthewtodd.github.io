@@ -4,7 +4,7 @@ layout: post
 ---
 <p class="update"><strong>Update:</strong> The <a href="http://perquackey.matthewtodd.org/">Perquackey site</a> works a lot better now---I've just switched to a <a href="http://personal.riverusers.com/~thegrendel/software.html" title="YAWL">better word list</a> and made the <a href="http://matthewtodd.org/svn/public/perquackey/lib/perquackey/fast_dictionary.rb">dictionary lookup</a> much faster!</p>
 
-<img src="/images/2007/09/28/perquackey.jpg" width="500" height="375" alt="Perquackey" style="border: 1px solid #333" />
+<img src="/images/2007/09/28/perquackey.jpg" width="500" height="375" alt="Perquackey" />
 
 Valerie's parents were here visiting for a few weeks, during which time her mom and I played Perquackey every chance we got.
 

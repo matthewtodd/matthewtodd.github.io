@@ -14,4 +14,4 @@ I did.
 
 They weren't.
 
-<img src="/images/2008/01/30/a-handful-of-fried-kumbikumbi.jpg" alt="A handful of fried kumbikumbi" border="0" width="500" height="375" />
+<img src="/images/2008/01/30/a-handful-of-fried-kumbikumbi.jpg" alt="A handful of fried kumbikumbi" width="500" height="375" />

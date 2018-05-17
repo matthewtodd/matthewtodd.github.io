@@ -6,7 +6,7 @@ My trouble with blogging is that when I'm doing things I'd write about, I don't 
 
 My buddies <a href="http://gotmikhail.com/">Michael</a> and <a href="http://lotzefamily.com/blog/">Andrew</a> made the trip last month, and we climbed the mountain together!
 
-<a href="http://flickr.com/photos/gotmikhail/2807861248/"><img src="http://farm4.static.flickr.com/3076/2807861248_bc1f6a2166.jpg" border="0" width="500" height="333" /></a>
+<a href="http://flickr.com/photos/gotmikhail/2807861248/"><img src="http://farm4.static.flickr.com/3076/2807861248_bc1f6a2166.jpg" width="500" height="333" /></a>
 
 They're both quite good photographers, so I didn't even bother carrying a camera. The shot above's from <a href="http://www.flickr.com/photos/gotmikhail/sets/72157607002387170/">Michael's Tanzania photoset on Flickr</a>, and <a href="http://lotzefamily.com/pictures/2008AUGkili/">Andrew's are up (with hilarious comments) on his site</a>.
 
@@ -14,4 +14,4 @@ On the climb, you really come to appreciate the strength and tirelessness of the
 
 We climbed with <a href="http://maranguhotel.com/">Marangu Hotel</a>, who take good care of their porters. Many, many companies don't, so I'd encourage you to check out the <a href="http://kiliporters.org/">Kilimanjaro Porters Assistance Project</a> and lend a hand as you're able.
 
-<a href="http://flickr.com/photos/gotmikhail/2807862012/"><img src="http://farm4.static.flickr.com/3075/2807862012_29d6d1de7f_d.jpg" border="0" width="500" height="333" /></a>
+<a href="http://flickr.com/photos/gotmikhail/2807862012/"><img src="http://farm4.static.flickr.com/3075/2807862012_29d6d1de7f_d.jpg" width="500" height="333" /></a>
