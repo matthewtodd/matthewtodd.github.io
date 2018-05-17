@@ -20,7 +20,7 @@ So, I've written a short Ruby script to help.
 
 Whenever you <code>svn ci</code> with unadded files lying around, <code>doh</code> stops your commit:
 
-<a href="http://www.flickr.com/photos/mtodd/1146644954/" title="Photo Sharing"><img src="http://farm2.static.flickr.com/1034/1146644954_c451bd6f2c.jpg" width="500" height="375" alt="Doh" /></a>
+<img src="/images/2007/08/17/doh.png" width="500" height="375" alt="Doh" />
 
 Cool, huh?
 

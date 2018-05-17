@@ -2,4 +2,4 @@
 title: Wedding pictures
 layout: post
 ---
-<a href="http://www.flickr.com/photos/mtodd/tags/wedding" title="Wedding pictures on Flickr"><img src="http://static.flickr.com/99/310954686_ff6e26bbc8.jpg" width="500" height="334" alt="Goat" /></a>
+<img src="/images/2006/12/01/goat.jpg" width="500" height="334" alt="Goat" />

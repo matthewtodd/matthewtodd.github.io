@@ -10,4 +10,4 @@ Thanks to <a href="http://www.jewish-food.org/recipes/brea0007.htm">the web</a>,
 
 Mmmmm.
 
-<a href="http://www.flickr.com/photos/mtodd/459758876/" title="Photo Sharing"><img src="http://farm1.static.flickr.com/192/459758876_bdd13cad05.jpg" width="500" height="375" alt="Bagels: Not Invented Here" /></a>
+<img src="/images/2007/04/15/bagels-not-invented-here.jpg" width="500" height="375" alt="Bagels: Not Invented Here" />

@@ -8,4 +8,4 @@ The net effect of all this is that every evening I get to play with water and fu
 
 I give you, The Water Game:
 
-<a href="http://www.flickr.com/photos/mtodd/327107279/" title="Photo Sharing"><img src="http://static.flickr.com/139/327107279_939bdec671.jpg" width="500" height="375" alt="The Water Game" /></a>
+<img src="/images/2006/12/20/the-water-game.jpg" width="500" height="375" alt="The Water Game" />

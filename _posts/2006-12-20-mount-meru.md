@@ -2,7 +2,7 @@
 title: Mount Meru
 layout: post
 ---
-<a href="http://www.flickr.com/photos/mtodd/338251257/" title="Photo Sharing"><img src="http://farm1.static.flickr.com/150/338251257_38129c2f7f.jpg" width="500" height="375" alt="Pretty Freakin' Awesome" /></a>
+<img src="/images/2006/12/20/pretty-freakin-awesome.jpg" width="500" height="375" alt="Pretty Freakin' Awesome" />
 
 So, our trip to <a href="http://en.wikipedia.org/wiki/Mount_Meru_(Tanzania)">Mount Meru</a> was AWESOME. I've let the time since pass without writing about it, so the stories are less clear in my head, but:
 

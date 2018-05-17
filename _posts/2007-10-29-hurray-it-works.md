@@ -2,7 +2,7 @@
 title: Hurray! It Works!
 layout: post
 ---
-<a href="http://www.flickr.com/photos/mtodd/1797916884/" title="Photo Sharing"><img src="http://farm3.static.flickr.com/2127/1797916884_9b81694b62.jpg" width="500" height="375" alt="Washing Machine" /></a>
+<img src="/images/2007/10/29/washing-machine.jpg" width="500" height="375" alt="Washing Machine" />
 
 After 3 months of waiting, installing, <a href="http://twitter.com/matthewtodd/statuses/242369552">flooding</a>, more waiting, <a href="http://twitter.com/matthewtodd/statuses/330288642">shipping</a>, fixing, and re-installing, we <strong>washed our first load of laundry</strong> Saturday!
 
@@ -12,6 +12,6 @@ Previously, Sylvia, the lady who works in our house, had been amazingly hand-was
 
 Now for the final hurdle: learning to use the blooming thing. You'd think it would be easy, but somehow it ends up reminding me of <a href="http://www.artima.com/intv/dry3.html">the helicopter story</a>. So to help, we've taped a photocopy of the instructions up on the wall above the machine:
 
-<a href="http://www.flickr.com/photos/mtodd/1797174265/" title="Photo Sharing"><img src="http://farm3.static.flickr.com/2011/1797174265_bbb57e2ec7.jpg" width="500" height="351" alt="Washing Machine Instructions" /></a>
+<img src="/images/2007/10/29/washing-machine-instructions.jpg" width="500" height="351" alt="Washing Machine Instructions" />
 
 Yikes.

@@ -2,7 +2,7 @@
 title: It's a beautiful desk
 layout: post
 ---
-<a href="http://www.flickr.com/photos/mtodd/365753285/" title="Photo Sharing"><img src="http://farm1.static.flickr.com/147/365753285_3148477dbf.jpg" width="500" height="333" alt="Desk!" /></a>
+<img src="/images/2007/01/22/desk.jpg" width="500" height="333" alt="Desk!" />
 
 Back in December, we talked with Valerie's carpenter friend, Fundi Kawau, and asked him to build me a desk. He did the work for $50, finished in about a week and then carted the whole thing up to our house in a wheelbarrow.
 

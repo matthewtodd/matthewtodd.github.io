@@ -2,7 +2,7 @@
 title: Eating with my Hands
 layout: post
 ---
-<a href="http://www.flickr.com/photos/mtodd/314819961/"><img src="http://static.flickr.com/100/314819961_2f43019c4b.jpg" width="500" height="375" alt="Amani Christmas party" /></a>
+<img src="/images/2006/12/06/amani-christmas-party.jpg" width="500" height="375" alt="Amani Christmas party" />
 
 I got in line lunchtime at the <a href="http://www.getjealous.com/travel-blog/diary/hornei/230553" title="More about the party from Valerie's co-worker, Ian">Amani Christmas party</a> Monday:
 

@@ -4,7 +4,7 @@ layout: post
 ---
 So I don't burden my poor brain trying to remember stuff, I've rigged up some <tt>crontab</tt> entries that fire off <a href="http://www.growl.info/">Growl</a> reminder messages every so often:
 
-<a href="http://www.flickr.com/photos/mtodd/479524562/" title="Photo Sharing"><img src="http://farm1.static.flickr.com/183/479524562_f8ac6d4183.jpg" width="500" height="375" alt="Lest I Forget" /></a>
+<img src="/images/2007/05/01/lest-i-forget.png" width="500" height="375" alt="Lest I Forget" />
 
 Arguably, I could have just put a bunch of event reminders in iCal, but it's nice to avoid cluttering the calendar and I like the way these Growl notifications look. :)
 

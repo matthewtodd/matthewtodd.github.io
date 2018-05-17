@@ -2,7 +2,7 @@
 title: "Next Steps: Learning Swahili"
 layout: post
 ---
-<a href="http://www.flickr.com/photos/mtodd/314819386/"><img src="http://static.flickr.com/101/314819386_ad59758fc4.jpg" width="500" height="375" alt="Our living room" /></a>
+<img src="/images/2006/12/11/our-living-room.jpg" width="500" height="375" alt="Our living room" />
 
 As the dust is settling from the move, the realization that I actually live in Africa now and will need to be making some sort of a long-term living here is starting to sink in.
 

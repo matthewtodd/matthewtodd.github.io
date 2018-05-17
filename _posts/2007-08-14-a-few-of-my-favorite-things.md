@@ -2,7 +2,7 @@
 title: A Few of My Favorite Things
 layout: post
 ---
-<a href="http://www.flickr.com/photos/mtodd/1114365541/" title="Photo Sharing"><img src="http://farm2.static.flickr.com/1048/1114365541_61a723ac14_o.jpg" width="500" height="667" alt="These are a few of my favorite things" /></a>
+<img src="/images/2007/08/14/these-are-a-few-of-my-favorite-things.jpg" width="500" height="667" alt="These are a few of my favorite things" />
 
 * Drinking water
 * Having short hair
