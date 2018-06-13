@@ -3,4 +3,3 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - README.rdoc
-- Rakefile
