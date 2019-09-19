@@ -36,8 +36,7 @@ nav li {
 }
 
 nav li time {
-  display: inline-block;
-  width: 10em;
+  white-space: nowrap;
 }
 
 .update {
@@ -48,6 +47,10 @@ nav li time {
   body {
     margin: 1em auto 10em;
     width: 640px;
+  }
+
+  nav li time::before {
+    content: "• ";
   }
 }
 

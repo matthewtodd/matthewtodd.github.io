@@ -13,10 +13,10 @@ title: Matthew Todd
   <ul>
   {% for post in site.posts %}
     <li>
+      <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
       <time datetime="{{ post.date | date: "%Y-%m-%d" }}" pubdate="pubdate">
         {{ post.date | date: "%Y %B %e"}}
       </time>
-      <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
     </li>
   {% endfor %}
   </ul>
