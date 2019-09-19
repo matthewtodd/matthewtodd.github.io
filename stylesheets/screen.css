@@ -17,11 +17,6 @@ h2, h3 { /* Just a few h3s in the capistrano-ext-textdrive article. */
   margin-top: 1.5em;
 }
 
-img.inset {
-  float: left;
-  margin: 0 1em 1em 0;
-}
-
 div.highlight {
   margin-left: 2em;
 }
@@ -30,22 +25,40 @@ div.highlight > pre {
   overflow-x: auto;
 }
 
+nav ul {
+  padding-left: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li time {
+  display: inline-block;
+  width: 10em;
+}
+
+.update {
+  padding: 1em;
+}
+
 @media (min-width: 640px) {
   body {
-    margin: 1em auto;
+    margin: 1em auto 10em;
     width: 640px;
   }
 }
 
 /* Solarized */
-/* base03    #002b36 */
-/* base02    #073642 */
-/* base01    #586e75 */
-/* base00    #657b83 */
-/* base0     #839496 */
-/* base1     #93a1a1 */
-/* base2     #eee8d5 */
-/* base3     #fdf6e3 */
+/*                   light           dark
+/* base03    #002b36                 background      */
+/* base02    #073642                 bkgd highlights */
+/* base01    #586e75 emphasized      secondary       */
+/* base00    #657b83 primary                         */
+/* base0     #839496                 primary         */
+/* base1     #93a1a1 secondary       emphasized      */
+/* base2     #eee8d5 bkgd highlights                 */
+/* base3     #fdf6e3 background                      */
 /* yellow    #b58900 */
 /* orange    #cb4b16 */
 /* red       #dc322f */
@@ -57,32 +70,57 @@ div.highlight > pre {
 
 body {
   background-color: #fdf6e3;
-  color: #586e75;
+  color: #657b83;
 }
 
-header time {
+time {
   color: #93a1a1;
 }
 
-a {
+.update {
+  background-color: #eee8d5;
+}
+
+a:link {
+  color: #268bd2;
+}
+
+a:active {
+  color: #dc322f;
+}
+
+a:visited {
   color: #6c71c4;
 }
+
+.color-yellow  { color: #b58900; }
+.color-orange  { color: #cb4b16; }
+.color-red     { color: #dc322f; }
+.color-magenta { color: #d33682; }
+.color-violet  { color: #6c71c4; }
+.color-blue    { color: #268bd2; }
+.color-cyan    { color: #2aa198; }
+.color-green   { color: #859900; }
 
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #002b36;
-    color: #93a1a1;
+    color: #839496;
   }
 
-  header time {
+  time {
     color: #586e75;
+  }
+
+  .update {
+    background-color: #073642;
   }
 }
 
 /* https://github.com/rouge-ruby/rouge/wiki/List-of-tokens */
 /* https://bitbucket.org/birkenfeld/pygments-main/src/default/pygments/styles/solarized.py */
 /* https://gist.github.com/nicolashery/5765395 */
-.highlight { background-color: #fdf6e3; color: #586e75 }
+.highlight { background-color: #fdf6e3; color: #657b83 }
 .highlight .c { color: #93a1a1 } /* Comment */
 .highlight .err { color: #586e75 } /* Error */
 .highlight .g { color: #586e75 } /* Generic */
@@ -153,7 +191,7 @@ a {
 .highlight .il { color: #2aa198 } /* Literal.Number.Integer.Long */
 
 @media (prefers-color-scheme: dark) {
-  .highlight { background-color: #002b36; color: #93a1a1 }
+  .highlight { background-color: #002b36; color: #839496 }
   .highlight .c { color: #586e75 } /* Comment */
   .highlight .err { color: #93a1a1 } /* Error */
   .highlight .g { color: #93a1a1 } /* Generic */

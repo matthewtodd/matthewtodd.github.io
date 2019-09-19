@@ -15,7 +15,7 @@ Here are 3 tips to help you enjoy the experience:
 The first time I ran <code>bundle exec bash</code>, I lost the git branch from my prompt:
 
 <div class="highlight"><pre>
-~/Code/captain <strong style="color:#f3f">master*</strong> bundle exec bash
+~/Code/captain <span class="color-magenta">master*</span> bundle exec bash
 bash: __git_ps1: command not found
 ~/Code/captain
 </pre></div>
@@ -42,8 +42,8 @@ fi
 And then you should have <code>__git_ps1</code> and friends again:
 
 <div class="highlight"><pre>
-~/Code/captain <strong style="color:#f3f">master*</strong> bundle exec bash
-~/Code/captain <strong style="color:#f3f">master*</strong>
+~/Code/captain <span class="color-magenta">master*</span> bundle exec bash
+~/Code/captain <span class="color-magenta">master*</span>
 </pre></div>
 
 <h2>2. Beware the <code>RUBYOPT</code></h2>
@@ -52,9 +52,9 @@ What you can't see in the prompt above is the next problem I ran into. I should
 have written something more like this:
 
 <div class="highlight"><pre>
-~/Code/captain <strong style="color:#f3f">master*</strong> bundle exec bash
+~/Code/captain <span class="color-magenta">master*</span> bundle exec bash
 ... THREE SECOND DELAY ...
-~/Code/captain <strong style="color:#f3f">master*</strong>
+~/Code/captain <span class="color-magenta">master*</span>
 </pre></div>
 
 Here's what's going on:
@@ -109,8 +109,8 @@ export PS1='\[\e[36m\]$(__bundler_ps1 "[%s] ")\[\e[0m\]\w\[\e[35m\]$(__git_ps1 "
 You'll see the name of the active bundle in your prompt:
 
 <div class="highlight"><pre>
-~/Code/captain <strong style="color:#f3f">master*</strong> bundle exec bash
-<strong style="color:#3ff">[captain]</strong> ~/Code/captain <strong style="color:#f3f">master*</strong>
+~/Code/captain <span class="color-magenta">master*</span> bundle exec bash
+<span class="color-cyan">[captain]</span> ~/Code/captain <span class="color-magenta">master*</span>
 </pre></div>
 
 <h2>Conclusion</h2>
