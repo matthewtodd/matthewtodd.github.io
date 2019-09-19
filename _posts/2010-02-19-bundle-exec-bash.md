@@ -26,7 +26,7 @@ startup files</a>, here's what I pieced together:
 
 * <code>Terminal.app</code> launches a &ldquo;login&rdquo; shell, which reads <code>~/.profile</code>.
 
-* The shell launched by <code>(bundle exec) bash</code> is <em>not</em> a login shell, so it reads <code>~/.bashrc</code> instead. <p>(Moreover, it only inherits the <em>environment variables</em> of its parent shell, none of the functions, aliases, or completions.)</p>
+* The shell launched by <code>(bundle exec) bash</code> is <em>not</em> a login shell, so it reads <code>~/.bashrc</code> instead. (Moreover, it only inherits the <em>environment variables</em> of its parent shell, none of the functions, aliases, or completions.)
 
 Connecting the dots, you'll want to:
 
