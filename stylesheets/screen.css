@@ -35,6 +35,11 @@ nav li time {
   white-space: nowrap;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 .update {
   padding: 1em;
 }
