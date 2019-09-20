@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  margin: 1em;
+  margin: 1em 1em 10em;
 }
 
 h1 {
@@ -45,7 +45,8 @@ nav li time {
 
 @media (min-width: 640px) {
   body {
-    margin: 1em auto 10em;
+    margin-left: auto;
+    margin-right: auto;
     width: 640px;
   }
 
