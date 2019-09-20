@@ -31,8 +31,8 @@ nav li {
   list-style: none;
 }
 
-nav li time {
-  white-space: nowrap;
+nav li time::after {
+  content: " •";
 }
 
 img {
@@ -49,10 +49,6 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 640px;
-  }
-
-  nav li time::before {
-    content: "• ";
   }
 
   div.highlight {
