@@ -19,10 +19,6 @@ h2, h3 { /* Just a few h3s in the capistrano-ext-textdrive article. */
   margin-top: 2em;
 }
 
-div.highlight {
-  margin-left: 2em;
-}
-
 div.highlight > pre {
   overflow-x: auto;
 }
@@ -52,6 +48,10 @@ nav li time {
 
   nav li time::before {
     content: "• ";
+  }
+
+  div.highlight {
+    margin-left: 2em;
   }
 }
 
