@@ -20,7 +20,11 @@ h2, h3 { /* Just a few h3s in the capistrano-ext-textdrive article. */
 }
 
 div.highlight > pre {
+  border-radius: 1em;
+  border-style: solid;
+  border-width: 1px;
   overflow-x: auto;
+  padding: 1em;
 }
 
 nav ul {
@@ -41,6 +45,7 @@ img {
 }
 
 .update {
+  border-radius: 1em;
   padding: 1em;
 }
 
@@ -49,10 +54,6 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 640px;
-  }
-
-  div.highlight {
-    margin-left: 2em;
   }
 }
 
@@ -88,6 +89,10 @@ time {
   background-color: #eee8d5;
 }
 
+div.highlight > pre {
+  border-color: #eee8d5;
+}
+
 a:link {
   color: #268bd2;
 }
@@ -121,6 +126,10 @@ a:visited {
 
   .update {
     background-color: #073642;
+  }
+
+  div.highlight > pre {
+    border-color: #073642;
   }
 }
 
