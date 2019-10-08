@@ -74,6 +74,11 @@ body {
   color: #657b83;
 }
 
+::selection {
+  /* https://stackoverflow.com/questions/22751624/how-to-make-selection-background-opacity-1 */
+  background-color: rgb(238, 232, 213, 0.99); /* #eee8d5; */
+}
+
 time {
   color: #93a1a1;
 }
@@ -111,6 +116,11 @@ a:visited {
   body {
     background-color: #002b36;
     color: #839496;
+  }
+
+  ::selection {
+    /* https://stackoverflow.com/questions/22751624/how-to-make-selection-background-opacity-1 */
+    background-color: rgb(7, 54, 66, 0.99); /* #073642; */
   }
 
   time {
