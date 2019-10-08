@@ -10,14 +10,15 @@ title: Matthew Todd
 </section>
 
 <nav>
-  <ul>
-  {% for post in site.posts %}
-    <li>
-      <time datetime="{{ post.date | date: "%Y-%m-%d" }}" pubdate="pubdate">
-        {{ post.date | date: "%Y-%m-%d"}}
-      </time>
-      <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
-    </li>
+  {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+  {% for year in postsByYear %}
+    <h2>{{ year.name }}</h2>
+    <ul>
+      {% for post in year.items %}
+      <li>
+        <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
   {% endfor %}
-  </ul>
 </nav>

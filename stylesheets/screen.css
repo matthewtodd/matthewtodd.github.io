@@ -32,18 +32,6 @@ div.highlight > pre {
   padding: 1em;
 }
 
-nav ul {
-  padding-left: 0;
-}
-
-nav li {
-  list-style: none;
-}
-
-nav li time::after {
-  content: " •";
-}
-
 img {
   height: auto;
   max-width: 100%;
