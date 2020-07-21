@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'GoRegular';
-  src: url('/images/go-regular.woff2') format('woff2');
-       url('/images/go-regular.woff') format('woff');
-       url('/images/go-regular.ttf') format('truetype');
+  src: url('/fonts/go-regular.woff2') format('woff2');
+       url('/fonts/go-regular.woff') format('woff');
+       url('/fonts/go-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'GoMonoRegular';
-  src: url('/images/go-mono.woff2') format('woff2');
-       url('/images/go-mono.woff') format('woff');
-       url('/images/go-mono.ttf') format('truetype');
+  src: url('/fonts/go-mono.woff2') format('woff2');
+       url('/fonts/go-mono.woff') format('woff');
+       url('/fonts/go-mono.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
