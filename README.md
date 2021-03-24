@@ -6,4 +6,4 @@
 
 Run the server:
 
-    jekyll s
+    bundle exec jekyll s -ol
