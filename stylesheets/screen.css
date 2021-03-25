@@ -40,14 +40,10 @@ h2, h3 { /* Just a few h3s in the capistrano-ext-textdrive article. */
 }
 
 div.highlight > pre {
-  border-radius: 1em;
-  border-style: solid;
-  border-width: 1px;
   font-family: GoMonoRegular, monospace;
   font-style: normal;
   font-weight: normal;
-  overflow-x: auto;
-  padding: 1em;
+  overflow-x: visible;
 }
 
 img {
