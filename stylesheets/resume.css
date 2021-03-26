@@ -25,8 +25,8 @@ p + p, p + ul {
   body {
     background-color: #fff;
     color: #444;
-    margin: 2rem auto;
-    max-width: 38em;
+    margin: 1rem;
+    max-width: 38rem;
   }
 
   h1, h2 {
@@ -35,6 +35,12 @@ p + p, p + ul {
 
   a {
     color: #048;
+  }
+}
+
+@media (min-width: 40rem) {
+  body {
+    margin: 2rem auto;
   }
 }
 
