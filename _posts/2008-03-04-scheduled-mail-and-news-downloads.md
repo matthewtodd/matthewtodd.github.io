@@ -8,7 +8,7 @@ But this does mean that I have to check them manually every morning, which is cu
 
 So, in the interest of <a href="http://www.netropolis.org/hash/perl/virtue.html">laziness</a>, I've just added a couple of delightfully short <code>crontab</code> entries, hoping they'll save me some time in the morning:
 
-<pre><code>
+```
  5  7 * * * osascript -e 'tell application "Mail" to check for new mail'
 10  7 * * * osascript -e 'tell application "NetNewsWire" to refreshAll'
-</code></pre>
+```

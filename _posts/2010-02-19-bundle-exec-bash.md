@@ -10,7 +10,7 @@ time.
 
 Here are 3 tips to help you enjoy the experience:
 
-<h2>1. Sort your <code>.bashrc</code> from your <code>.profile</code></h2>
+<h2>Sort your <code>.bashrc</code> from your <code>.profile</code></h2>
 
 The first time I ran <code>bundle exec bash</code>, I lost the git branch from my prompt:
 
@@ -33,6 +33,7 @@ Connecting the dots, you'll want to:
 1. Move all your aliases, functions and completions out of <code>~/.profile</code> and into <code>~/.bashrc</code>. (<a href="http://github.com/matthewtodd/dotfiles/commit/84d57288548c484d59f0f1e1d43ab3b0abb1b263">example</a>)
 
 2. Source your <code>~/.bashrc</code> at the bottom of your <code>~/.profile</code>:
+
 ```bash
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
@@ -46,7 +47,7 @@ And then you should have <code>__git_ps1</code> and friends again:
 ~/Code/captain <span class="color-magenta">master*</span>
 </pre></div>
 
-<h2>2. Beware the <code>RUBYOPT</code></h2>
+<h2>Beware the <code>RUBYOPT</code></h2>
 
 What you can't see in the prompt above is the next problem I ran into. I should
 have written something more like this:
@@ -61,10 +62,7 @@ Here's what's going on:
 
 1. <code>__git_ps1</code> calls <code>git</code> <a href="http://github.com/git/git/blob/v1.6.5.7/contrib/completion/git-completion.bash#L87-178">5 or 6 times.</a>
 
-2. I had mixed (the <a href="http://gist.github.com/284823">non-rubygems version</a> of) <a href="http://github.com/defunkt/hub"><code>hub</code></a> into <code>git</code>:
-```bash
-alias git=hub
-```
+2. I had mixed (the <a href="http://gist.github.com/284823">non-rubygems version</a> of) <a href="http://github.com/defunkt/hub"><code>hub</code></a> into <code>git</code> with `alias git=hub`.
 
 3. <code>bundle exec</code> <a href="http://github.com/carlhuda/bundler/blob/0.9.7/lib/bundler/cli.rb#L119-123">adds <code><nobr>-rbundler/setup</nobr></code> to your <code>RUBYOPT</code></a>.
 
@@ -77,7 +75,7 @@ The simple workaround is to clear <code>RUBYOPT</code> when calling <code>hub</c
 alias git='RUBYOPT= hub'
 ```
 
-<h2>3. Show the bundle in your prompt</h2>
+<h2>Show the bundle in your prompt</h2>
 
 It gets hard to remember if you've already run <code>bundle exec bash</code>,
 or, if you tend to <code>cd</code> wildly all over the place, <em>which</em>

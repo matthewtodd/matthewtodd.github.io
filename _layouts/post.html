@@ -6,11 +6,13 @@
   <article>
     <header>
       <h1>{{ page.title }}</h1>
-      <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate="pubdate">
-        {{ page.date | date: "%A, %B %e, %Y"}}
-      </time>
-      &mdash;
-      <a href="/" rel="author">Matthew Todd</a>
+      <p>
+        <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate="pubdate">
+          {{ page.date | date: "%A, %B %e, %Y"}}
+        </time>
+        &mdash;
+        <a href="/" rel="author">Matthew Todd</a>
+      </p>
     </header>
 
     {{ content }}

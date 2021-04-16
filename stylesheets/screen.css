@@ -22,28 +22,42 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
-  margin: 1em 1em 10em;
+  margin: 1rem 0 10rem;
+}
+
+h1, h2, h3, p, ul, ol {
+  margin: 0 1rem 1rem;
+  max-width: 38rem;
+}
+
+li > p {
+  margin-left: 0;
+}
+
+pre {
+  margin: 0 1rem 2rem;
+  overflow-x: auto;
+  padding: 1rem 0 1.5rem;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: normal;
   margin-bottom: 0;
-  margin-top: 1em;
+  margin-top: 2rem;
 }
 
 h2, h3 { /* Just a few h3s in the capistrano-ext-textdrive article. */
-  font-size: 1.5em;
+  font-size: 1.25rem;
   font-weight: normal;
   margin-bottom: 0;
-  margin-top: 2em;
+  margin-top: 1rem;
 }
 
-div.highlight > pre {
+code, pre {
   font-family: GoMonoRegular, monospace;
   font-style: normal;
   font-weight: normal;
-  overflow-x: visible;
 }
 
 img {
@@ -52,16 +66,7 @@ img {
 }
 
 .update {
-  border-radius: 1em;
-  padding: 1em;
-}
-
-@media (min-width: 640px) {
-  body {
-    margin-left: auto;
-    margin-right: auto;
-    width: 640px;
-  }
+  padding: 1rem;
 }
 
 /* Solarized */
@@ -84,8 +89,8 @@ img {
 /* green     #859900 */
 
 body {
-  background-color: #fdf6e3;
-  color: #657b83;
+  background-color: #fff;
+  color: #444;
 }
 
 ::selection {
@@ -93,16 +98,17 @@ body {
   background-color: rgb(238, 232, 213, 0.99); /* #eee8d5; */
 }
 
+blockquote {
+  color: #777;
+}
+
 time {
   color: #93a1a1;
 }
 
 .update {
-  background-color: #eee8d5;
-}
-
-div.highlight > pre {
-  border-color: #eee8d5;
+  background-color: #fdf6e3;
+  color: #657b83;
 }
 
 a:link {
@@ -128,8 +134,8 @@ a:visited {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #002b36;
-    color: #839496;
+    background-color: #222;
+    color: #aaa;
   }
 
   ::selection {
@@ -137,16 +143,17 @@ a:visited {
     background-color: rgb(7, 54, 66, 0.99); /* #073642; */
   }
 
+  blockquote {
+    color: #777;
+  }
+
   time {
     color: #586e75;
   }
 
   .update {
-    background-color: #073642;
-  }
-
-  div.highlight > pre {
-    border-color: #073642;
+    background-color: #002b36;
+    color: #839496;
   }
 }
 

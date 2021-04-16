@@ -21,7 +21,9 @@ Clearly, we'll be taking an XP/Getting Real approach, working on site and lookin
 ## The Team
 
 * *Joe Ventura*, Amani's Communications Coordinator and The Customer. Joe's my good friend, and this will be our third project together. He gets it.
+
 * *Japhary Salum*, Amani's Social Work Coordinator. Japhary's keen to see his staff get a good tool in their hands, and he'll be a joy to work with--not to mention he's scary brilliant, like [Austin](http://twitter.com/dotjerky).
+
 * *Joachim Mangilima*, Software Developer. Joachim and I have been pair programming together for the past year. He's an avid learner and is growing well as a developer. It would be awesome for him to get some outside influence [other than me](http://blog.objectmentor.com/articles/2009/01/20/multi-dimensional-seniority)!
 
 ## ... and You?

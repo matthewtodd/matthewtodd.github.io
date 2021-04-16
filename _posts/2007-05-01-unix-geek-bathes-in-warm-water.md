@@ -14,7 +14,7 @@ The <tt><a href="http://en.wikipedia.org/wiki/Crontab">crontab</a></tt> file is 
 
 For what it's worth, here's mine:
 
-```bash
+```
 15 10,14 * * 1-5  /usr/local/bin/remind 'Take a minute to pray for Valerie and our marriage.'
 0  16    * * 1-5  /usr/local/bin/remind 'Open the gate for Valerie if she honks.'
 30 16    * * 1-5  /usr/local/bin/remind 'Now would be a great time to turn on the water heater.'
