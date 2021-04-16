@@ -64,7 +64,7 @@ Here's what's going on:
 
 2. I had mixed (the <a href="http://gist.github.com/284823">non-rubygems version</a> of) <a href="http://github.com/defunkt/hub"><code>hub</code></a> into <code>git</code> with `alias git=hub`.
 
-3. <code>bundle exec</code> <a href="http://github.com/carlhuda/bundler/blob/0.9.7/lib/bundler/cli.rb#L119-123">adds <code><nobr>-rbundler/setup</nobr></code> to your <code>RUBYOPT</code></a>.
+3. <code>bundle exec</code> <a href="http://github.com/carlhuda/bundler/blob/0.9.7/lib/bundler/cli.rb#L119-123">adds <code>-rbundler/setup</code> to your <code>RUBYOPT</code></a>.
 
 Boom! I was resolving the dependencies in my <code>Gemfile</code> 5 or 6 times
 just to generate a prompt!
