@@ -18,7 +18,7 @@
     <id>tag:matthewtodd.org,2009:{{ post.id }}</id>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <link rel="alternate" type="text/html" href="{{ post.url }}" />
-    <title>{{ post.title }}</title>
+    <title type="html">{{ post.title | xml_escape }}</title>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
