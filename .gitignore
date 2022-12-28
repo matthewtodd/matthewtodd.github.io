@@ -1,3 +1,6 @@
 .bundle
 .jekyll-cache
+.terraform
 _site
+*.tfstate
+*.tfstate.backup
