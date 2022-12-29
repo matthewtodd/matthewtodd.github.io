@@ -18,6 +18,10 @@ resource "aws_route53_zone" "main" {
   name = "matthewtodd.org"
 }
 
+output "name_servers" {
+  value = aws_route53_zone.main.name_servers
+}
+
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record
 resource "aws_route53_record" "a" {
   zone_id = aws_route53_zone.main.zone_id
@@ -94,6 +98,14 @@ resource "aws_route53_record" "github_pages_challenge" {
 resource "aws_route53_record" "perquackey" {
   zone_id = aws_route53_zone.main.zone_id
   name    = "perquackey.matthewtodd.org"
+  type    = "CNAME"
+  ttl     = 3600
+  records = ["matthewtodd.github.io."]
+}
+
+resource "aws_route53_record" "www" {
+  zone_id = aws_route53_zone.main.zone_id
+  name    = "www.matthewtodd.org"
   type    = "CNAME"
   ttl     = 3600
   records = ["matthewtodd.github.io."]
