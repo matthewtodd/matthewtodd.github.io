@@ -85,6 +85,14 @@ resource "aws_route53_record" "txt" {
   ]
 }
 
+resource "aws_route53_record" "atproto" {
+  zone_id = aws_route53_zone.main.zone_id
+  name    = "_atproto.matthewtodd.org"
+  type    = "TXT"
+  ttl     = 3600
+  records = ["did=did:plc:q5r24vxbohsa7fopgxylynu4"]
+}
+
 resource "aws_route53_record" "dmarc" {
   zone_id = aws_route53_zone.main.zone_id
   name    = "_dmarc.matthewtodd.org"
